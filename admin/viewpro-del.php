@@ -109,7 +109,7 @@
 
 
 	<input type="submit" value="Delete"/>&nbsp &nbsp
-<a href="../table/userdetail.php"> <button type="button">Back</button></a>
+<a href="userdetail.php"> <button type="button">Back</button></a>
 
 </fieldset>
 </form>
