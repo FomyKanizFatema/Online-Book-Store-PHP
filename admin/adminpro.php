@@ -11,18 +11,7 @@
 	<body>
 		<?php include("adminheader.php");?>
 		<table border="1" width="100%" align="center" cellpadding="10px">
-			<!--tr >				
-				<td border="0" colspan="2"><!--div align="center"--> <!--img src="t.jpg" width="10%"><!--div align="center"><b>TIENDA DE FLORIS</b></div-->
-				
-				
-				<!--div align="right" cellpadding="-25">
-					Logged in as <a href="Dashboard.php"><!--?php echo "User"/*$currentUser['name']*/;?> </a>|<a href="Users.php">User List</a>|
-					<a href="Books.php">Book List</a>|<a href="Employee.php">Employee List</a>|
-					<a href="Logout.php">Logout</a>
-					
-				</div>
-				</td>
-			</tr-->
+			
          <tr valign = "top" height="500">
             <td bgcolor = "" width ="">
               <b>Account</b><br/><hr><br/>
