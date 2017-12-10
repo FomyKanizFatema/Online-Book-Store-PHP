@@ -23,7 +23,7 @@
 				<td cellpadding="" width='50'>
 				<div align="left" >
 				
-				<a href="">User Name</a>
+				<!--a href="">User Name</a-->
 				
 					<!--select>	
 						<option value=""><a href="">Welcome User Name</a></option>
