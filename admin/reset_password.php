@@ -32,7 +32,7 @@
 				 <a href="../admin/editpro.php"> <li>Edit Profile</a><br />
 				 <a href="../admin/profile.php"> <li> Change Profile Picture</a><br />
 				<a href="../admin/reset_password.php">  <li> Change Password</a><br />
-				<a href="../table/login.php">  <li> Logout</a><br /><br/>
+				<a href="../user/login.php">  <li> Logout</a><br /><br/>
 				
 					</ul><br/>
 					
@@ -81,7 +81,7 @@
 
 
 
-<form action="../table/passHandler.php">
+<form action="../user/passHandler.php">
 <fieldset>
 <legend>CHANGE PASSWORD</legend>	
 <b style="color:">Current Password &nbsp &nbsp &nbsp &nbsp   : </b> <input  type="password" name="old"/><br/><br/>

@@ -23,7 +23,9 @@
 				<td cellpadding="" width='50'>
 				<div align="left" >
 				
-					<select>	
+				<a href="">User Name</a>
+				
+					<!--select>	
 						<option value=""><a href="">Welcome User Name</a></option>
 						<option value=""><a href="homeUser.php">Home</a></option>
 						<option value=""><a href="userDashboard.php">Dashboard</a></option>
@@ -31,11 +33,11 @@
 						<option value=""><a href="Edit_User_Profile.php">Edit Profile</a></option>
 						<option value=""><a href="Change_User_Picture.php">Change Profile Picture</a></option>
 						<option value=""><a href="Change_User_Pass.php">Change Password</a></option>
-					</select>
-					<a href="../table/home.php"><input type="submit" value="Home" /></a>
+					</select-->
+					<a href="../user/home.php"><input type="submit" value="Home" /></a>
 					<a href="card.php"><input type="submit" value="Cart" /></a>
 					<!--input type="submit" value="Contact" /-->
-					<a href="../table/login.php"><input type="submit" value="Sign Out" /></a>
+					<a href="../user/login.php"><input type="submit" value="Sign Out" /></a>
 					<!--<a href="signIn.php">Sign In</a> |
 					<a href="signUn.php">Sign Un</a> |
 					<a href="contact.php">Contact Us</a>!-->					

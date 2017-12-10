@@ -21,7 +21,7 @@
 				 <a href="../admin/editpro.php"> <li>Edit Profile</a><br />
 				 <a href="../admin/profile.php"> <li> Change Profile Picture</a><br />
 				<a href="../admin/reset_password.php">  <li> Change Password</a><br />
-				<a href="../table/login.php">  <li> Logout</a><br /><br/>
+				<a href="../user/login.php">  <li> Logout</a><br /><br/>
 				
 					</ul><br/>
 					
@@ -121,8 +121,7 @@
             </tr>
         </table>	
 
-<!--	<input type="submit" value="update"/>&nbsp &nbsp
-<a href="../admin/viewpro-del.html"><button type="button">Delete</button></a-->
+
 
 </fieldset>
 </form>

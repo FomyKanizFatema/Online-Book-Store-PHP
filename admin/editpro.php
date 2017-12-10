@@ -32,7 +32,7 @@
 				 <a href="../admin/editpro.php"> <li>Edit Profile</a><br />
 				 <a href="../admin/profile.php"> <li> Change Profile Picture</a><br />
 				<a href="../admin/reset_password.php">  <li> Change Password</a><br />
-				<a href="../table/login.php">  <li> Logout</a><br /><br/>
+				<a href="../user/login.php">  <li> Logout</a><br /><br/>
 				
 					</ul><br/>
 					
@@ -75,7 +75,7 @@
             
             <td bgcolor = "" width = "1050" height = "200">
                
-			   <form action="../table/handler.php">
+			   <form action="../user/handler.php">
 <fieldset>
 <legend>Edit Profile</legend>
 
@@ -131,7 +131,7 @@
 <a href="adminpro.php"><button type="button">Update</button></a>
 <input type="reset" value="Reset"/>&nbsp
 <a href="../admin/viewpro-del.php"><button type="button">Delete</button></a>
-&nbsp <a href="../table/userdetail.php">go back?</a>
+&nbsp <a href="../admin/userdetail.php">go back?</a>
 
 </fieldset>
 </form>

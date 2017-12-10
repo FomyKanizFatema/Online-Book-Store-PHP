@@ -12,7 +12,7 @@
 		<?php include("header.php");?>
 		<br/>
 	<div id="login">
-<form action="../table/loginHandler.php">
+<form action="../user/loginHandler.php">
 
    
   <!--table width = "100%" height="">
