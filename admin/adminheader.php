@@ -8,7 +8,7 @@
 			<table border='0'width="95%" align="center" cel="10px">
 			
 			<tr >				
-				<td border="0" width='30%'><a href="../table/home.php"> <img src="t.jpg" height="150"/></a>
+				<td border="0" width='30%'><a href="../user/home.php"> <img src="t.jpg" height="150"/></a>
 				
 				</td>
 				<td width='20%'>
