@@ -5,8 +5,9 @@
 <head>
 		<title>Tienda De Floris</title>
 </head>
+
 	<body>
-		
+
 		<br/>
 	<div id="login">
 		<form action="../Handler/loginHandler.php">
@@ -14,14 +15,14 @@
    
  
  
-
+<br/> <br/>
 <table id="one"><!-- style="position:absolute;top:45%;left:5%" -->
 <tr align="" ><!--style="background-image:url('f.jpg ');background-repeat:no-repeat;background-position:center;background-size:100%;width="50%"" height="500"--> <td>
 
 
 
 <fieldset>
-<legend>LOGIN</legend>	<br/>
+<legend>LOG IN</legend>	<br/>
 <b >User Name : </b> <input name="uname" type="text" placeholder="Enter User Name" /><br/><br/>
 <b >Password &nbsp &nbsp: </b> <input name="password" type="password" placeholder="Enter Password" /><br/><br/>
 <input  type="checkbox"/><b >Remember Me</b><br/><br/>
@@ -32,8 +33,8 @@
 
 <b><a href="forgotpass.php" id ="for">Forgot Password?</a></b><br/><br/>
 <br/> Temporary <br/>
-<a href="userHome.php"> Login as User</a>
-<a href="../admin/adminPro.php"> Login as Admin</a>
+<a href="../user/userHome.php"> Login as User</a>
+<a href="../Admin/adminHome.php"> Login as Admin</a>
 
 
 	<?php
@@ -58,7 +59,7 @@
 <tr>
  <td>
 <fieldset>
-<legend>SIGN UP</legend>
+<legend>LOG ON</legend>
 <b> <font size="5" > <b>Don't have any account ? Register here</b> </font> </b><br/><br/>
 <b >Name &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  :  </b> <input name="name" type="text" placeholder="Name" />
 <?php
@@ -127,7 +128,7 @@
 
 
 
-	<input type="submit" value="Sign up"/>&nbsp &nbsp
+	<input type="submit" value="Register"/>&nbsp &nbsp
 	<!--input type="reset" value="Reset"/-->
 
 
