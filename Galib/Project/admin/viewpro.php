@@ -32,7 +32,7 @@
 				 <a href="../admin/editpro.php"> <li>Edit Profile</a><br />
 				 <a href="../admin/profile.php"> <li> Change Profile Picture</a><br />
 				<a href="../admin/reset_password.php">  <li> Change Password</a><br />
-				<a href="../table/login.php">  <li> Logout</a><br /><br/>
+				<!--a href="../user/login.php">  <li> Logout</a><br /><br/-->
 				
 					</ul><br/>
 					
@@ -108,7 +108,7 @@
 	<!--input type="submit" value="Edit"/>&nbsp &nbsp-->
 	<a href="../admin/editpro.php"><button type="button">Edit</button></a>&nbsp &nbsp
 <a href="../admin/viewpro-del.php"><button type="button">Delete</button></a>
-&nbsp <a href="../table/userdetail.php">go back?</a>
+&nbsp <a href="../user/userdetail.php">go back?</a>
 
 </fieldset>
 </form>

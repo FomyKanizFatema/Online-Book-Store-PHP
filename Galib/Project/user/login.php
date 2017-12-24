@@ -12,7 +12,7 @@
 		<?php include("header.php");?>
 		<br/>
 	<div id="login">
-<form action="../table/loginHandler.php">
+<form action="../user/loginHandler.php">
 
    
   <!--table width = "100%" height="">
@@ -83,6 +83,9 @@
 
 
 <b><a href="forgotpass.php" id ="for">Forgot Password?</a></b><br/><br/>
+<br/> Temporary <br/>
+<a href="userHome.php"> Login as User</a>
+<a href="../admin/adminPro.php"> Login as Admin</a>
 
 
 	<?php
@@ -107,8 +110,8 @@
 <tr><!--style="background-image:url('ab.jpg ');background-repeat:no-repeat;background-position:center;background-size:100%;width="50%"" height="500" -->
  <td>
 <fieldset>
-<!--legend>Registration</legend><br/-->
-<b> <font size="5" > No Account?  sign up here </font> </b><br/><br/>
+<legend>SIGN UP</legend>
+<b> <font size="5" > <b>Don't have any account ? Register here</b> </font> </b><br/><br/>
 <b >Name &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  :  </b> <input name="name" type="text" placeholder="Name" />
 <?php
 		if(isset($_GET['errors3']))

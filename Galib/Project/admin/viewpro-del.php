@@ -32,7 +32,7 @@
 				 <a href="../admin/editpro.php"> <li>Edit Profile</a><br />
 				 <a href="../admin/profile.php"> <li> Change Profile Picture</a><br />
 				<a href="../admin/reset_password.php">  <li> Change Password</a><br />
-				<a href="../table/login.php">  <li> Logout</a><br /><br/>
+				<!--a href="../user/login.php">  <li> Logout</a><br /><br/-->
 				
 					</ul><br/>
 					
@@ -109,7 +109,7 @@
 
 
 	<input type="submit" value="Delete"/>&nbsp &nbsp
-<a href="../table/userdetail.php"> <button type="button">Back</button></a>
+<a href="userdetail.php"> <button type="button">Back</button></a>
 
 </fieldset>
 </form>

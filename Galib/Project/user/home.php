@@ -11,7 +11,7 @@
 	<body>
 		<?php include("header.php");?>
 				
-		<table id="one" align="center">
+		<table align="center">
 			<tr>
 				<td>
 					<table align="center" border='1'>

@@ -18,7 +18,7 @@ $currentUser['yyyy']="1995";
 				<td width="20%" > 
 					<table cellpadding="15px" align="center">
 						<tr ><th >Account</th></tr>
-						<tr align="center"><td><a href="userDashboard.php.php">Dashboard</td></tr>
+						<tr align="center"><td><a href="userDashboard.php">Dashboard</td></tr>
 						<tr align="center"><td><a href="View_User_Profile.php">View Profile</td></tr>
 						<tr align="center"><td><a href="Edit_User_Profile.php">Edit Profile</td></tr>
 						<tr align="center"><td><a href="Change_User_Picture.php">Change Profile Picture</td></tr>

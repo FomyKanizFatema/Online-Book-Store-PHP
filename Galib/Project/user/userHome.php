@@ -8,7 +8,7 @@
 				<td width="20%" > 
 					<table cellpadding="15px">
 						<tr ><th ><h3>Account</h3></th></tr>
-						<tr align="center"><td><a href="bord.php">Dashboard</td></tr>
+						<tr align="center"><td><a href="userDashboard.php">Dashboard</td></tr>
 						<tr align="center"><td><a href="View_User_Profile.php">View Profile</td></tr>
 						<tr align="center"><td><a href="Edit_User_Profile.php">Edit Profile</td></tr>
 						<tr align="center"><td><a href="Change_User_Picture.php">Change Profile Picture</td></tr>
