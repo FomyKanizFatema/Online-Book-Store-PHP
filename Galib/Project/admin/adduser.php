@@ -27,12 +27,12 @@
             <td bgcolor = "" width ="">
               <b>Account</b><br/><hr><br/>
 					<ul>
-						 <a href="bord.php"> <li> Dashbord</a><br />
-				 <a href="adminpro.php"> <li> View Profile</a><br />
-				 <a href="editpro.php"> <li>Edit Profile</a><br />
-				 <a href="profile.php"> <li> Change Profile Picture</a><br />
-				<a href="reset_password.php">  <li> Change Password</a><br />
-				<a href="home.php">  <li> Logout</a><br /><br/>
+						 <a href="../admin/bord.php"> <li> Dashbord</a><br />
+				 <a href="../admin/adminpro.php"> <li> View Profile</a><br />
+				 <a href="../admin/editpro.php"> <li>Edit Profile</a><br />
+				 <a href="../admin/profile.php"> <li> Change Profile Picture</a><br />
+				<a href="../admin/reset_password.php">  <li> Change Password</a><br />
+				<a href="../table/login.php">  <li> Logout</a><br /><br/>
 				
 					</ul><br/>
 					
@@ -49,7 +49,7 @@
 						<li><a href="userdetail.php">User List</a></li>
 						<!--li><a href="Update_User_Info.php">Update User Info</a></li-->
 						<li><a href="AddUser.php">Add User</a></li>
-						<li><a href="userdetail.php">Block User</a></li>
+						<li><a href="../admin/userdetail.php">Block User</a></li>
 						<!--li><a href="Remove_User.php">Remove User</a></li-->						
 					</ul><br/>
 					
@@ -65,7 +65,7 @@
 					<ul>
 						<li><a href="employeedetail.php">Employee List</a></li>
 						<li><a href="editpro.php">Update User Info</a></li>
-						<li><a href="adduser.php">Add User</a></li>
+						<li><a href="../admin/adduser.php">Add User</a></li>
 						<!--li><a href="../admin/userdetail.php">Block User</a></li-->
 						<!--li><a href="Remove_Employee.php">Remove User</a></li-->						
 					</ul>
@@ -75,7 +75,7 @@
             
             <td bgcolor = "" width = "1050" height = "200">
                
-			   <form action="handler.php">
+			   <form action="../table/handler.php">
 <fieldset>
 <legend>Edit Profile</legend>
 

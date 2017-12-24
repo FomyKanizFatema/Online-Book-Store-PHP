@@ -20,18 +20,19 @@
             <td bgcolor = "" width ="">
               <b>Account</b><br/><hr><br/>
 					<ul>
-						 <a href="bord.php"> <li> Dashbord</a><br />
-				 <a href="adminpro.php"> <li> View Profile</a><br />
-				 <a href="editpro.php"> <li>Edit Profile</a><br />
-				 <a href="profile.php"> <li> Change Profile Picture</a><br />
-				<a href="reset_password.php">  <li> Change Password</a><br />
-				<a href="home.php">  <li> Logout</a><br /><br/>
+						 <a href="../admin/bord.php"> <li> Dashbord</a><br />
+				 <a href="../admin/adminpro.php"> <li> View Profile</a><br />
+				 <a href="../admin/editpro.php"> <li>Edit Profile</a><br />
+				 <a href="../admin/profile.php"> <li> Change Profile Picture</a><br />
+				<a href="../admin/reset_password.php">  <li> Change Password</a><br />
+				<a href="../table/login.php">  <li> Logout</a><br /><br/>
+				
 					</ul><br/>
 					
 					<hr/><b>Orders</b><br/><hr><br/>
 					<ul>
-						<li><a href="card.php"> Order List</a></li>
-						<!--li><a href="Order/Order_History.php">Order_History</a></li-->
+						<li><a href="Order/Orders.php">New Order List</a></li>
+						<li><a href="Order/Order_History.php">Order_History</a></li>
 												
 											
 					</ul><br/>
@@ -39,27 +40,27 @@
 					<hr/><b>Users</b><br/><hr><br/>
 					<ul>
 						<li><a href="userdetail.php">User List</a></li>
-						<!--li><a href="Update_User_Info.php">Update User Info</a></li-->
-						<li><a href="AddUser.php">Add User</a></li>
-						<li><a href="userdetail.php">Block User</a></li>
-						<!--li><a href="Remove_User.php">Remove User</a></li-->						
+						<li><a href="Update_User_Info.php">Update User Info</a></li>
+						<li><a href="Add User.php">Add User</a></li>
+						<li><a href="Block_User">Block User</a></li>
+						<li><a href="Remove_User.php">Remove User</a></li>						
 					</ul><br/>
 					
 					<hr/><b>Books</b><br/><hr><br/>
 					<ul>
-						<li><a href="booklist.php">Book List</a></li>
-						<li><a href="UpdateBookInfo.php">Update Book Info</a></li>
-						<li><a href="addbook.php">Add Book</a></li>						
-						<!--li><a href="Delete_Book.php">Delete Book</a></li-->						
+						<li><a href="Books.php">Book List</a></li>
+						<li><a href="Update_Book_Info.php">Update Book Info</a></li>
+						<li><a href="Add Book.php">Add Book</a></li>						
+						<li><a href="Delete_Book.php">Delete Book</a></li>						
 					</ul><br/>
 					
 					<hr/><b>Employees</b><br/><hr/><br/>
 					<ul>
-						<li><a href="employeedetail.php">Employee List</a></li>
-						<li><a href="editpro.php">Update User Info</a></li>
-						<li><a href="adduser.php">Add User</a></li>
-						<!--li><a href="../admin/userdetail.php">Block User</a></li-->
-						<!--li><a href="Remove_Employee.php">Remove User</a></li-->						
+						<li><a href="Employee.php">Employee List</a></li>
+						<li><a href="Update_Employee_Info.php">Update User Info</a></li>
+						<li><a href="Add Employee.php">Add User</a></li>
+						<li><a href="Block_Employee">Block User</a></li>
+						<li><a href="Remove_Employee.php">Remove User</a></li>						
 					</ul>
 					
 					
@@ -104,8 +105,8 @@
             </td>
          </tr>
          <tr>
-            <td colspan = "2" >
-               <center >
+            <td colspan = "2" bgcolor = "steelblue">
+               <center style="color:white">
                   Copyright © 2017
                </center>
             </td>

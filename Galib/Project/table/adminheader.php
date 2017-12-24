@@ -6,24 +6,31 @@
 			<table border='0'width="95%" align="center" cel="10px">
 			
 			<tr >				
-				<td border="0" width='20%'> <img src="t.jpg" height="150"/>
+				<td border="0" width='30%'> <a href="../table/home.php"> <img src="t.jpg" height="150"/></a>
 				
 				</td>
-				<td width='60%' align="center">
+				<td width='20%'>
 					<form action="Handler/search.php">
 					<input type="text" name="search" placeholder="  Search by Course/ Books/ Authors" size="31" height="100px" /> 
 					<input type="submit" value="Search" />
 					</form>
 				</td>
-				<td cellpadding="" width='50%'>
+				<td cellpadding="" width='50'>
 				<div align="left" >
 				
-					<a href="userHome.php">	<input type="submit" value="Home" /></a>
-					
-					<a href="wishlist.php">	<input type="submit" value="Wishlist" /></a>
-					<a href="usercard.php">	<input type="submit" value="Cart" /></a>
-					<a href="contact.php"><input type="submit" value="Contact Us" /></a>					
-					<a href="home.php"><input type="submit" value="Sign Out" /></a>
+					<select>	
+						<option value=""><a href="">Welcome User Name</a></option>
+						<option value=""><a href="homeUser.php">Home</a></option>
+						<option value=""><a href="userDashboard.php">Dashboard</a></option>
+						<option value=""><a href="View_User_Profile.php">View Profile</a></option>
+						<option value=""><a href="Edit_User_Profile.php">Edit Profile</a></option>
+						<option value=""><a href="Change_User_Picture.php">Change Profile Picture</a></option>
+						<option value=""><a href="Change_User_Pass.php">Change Password</a></option>
+					</select>
+					<a href="../table/home.php"><input type="submit" value="Home" /></a>
+					<input type="submit" value="Cart" />
+					<!--input type="submit" value="Contact" /-->
+					<a href="../table/login.php"><input type="submit" value="Sign Out" /></a>
 					<!--<a href="signIn.php">Sign In</a> |
 					<a href="signUn.php">Sign Un</a> |
 					<a href="contact.php">Contact Us</a>!-->					

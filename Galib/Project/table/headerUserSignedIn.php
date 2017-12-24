@@ -3,31 +3,27 @@
 	<body>
 		
 		<header>
-			  <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
-
 			<table border='0'width="95%" align="center" cel="10px">
 			
 			<tr >				
-				<td border="0" width='30%'><a href="home.php"> <img src="t.jpg" height="150"/></a>
+				<td border="0" width='20%'><a href="home.php"> <img src="t.jpg" height="150"/></a>
 				
 				</td>
-				<td width='20%'>
+				<td width='60%' align="center">
 					<form action="Handler/search.php">
-					<input type="text" name="search" placeholder="  Search by Course/ Books/ Authors" size="31" height="100px" />
-					
-					<!--a href=""><i style="color:;padding:2px" class="fa fa-search"></i></a-->
-					
+					<input type="text" name="search" placeholder="  Search by Course/ Books/ Authors" size="31" height="100px" /> 
 					<input type="submit" value="Search" />
 					</form>
 				</td>
-				<td cellpadding="" width='50'>
+				<td cellpadding="" width='50%'>
 				<div align="left" >
 				
+					<a href="userHome.php">	<input type="submit" value="Home" /></a>
 					
-					<a href="bord.php"><input type="submit" value="Home" /></a>
-					<a href="card.php"><input type="submit" value="Cart" /></a>
-					<!--input type="submit" value="Contact" /-->
-					<a href="../table/login.php"><input type="submit" value="Sign Out" /></a>
+					<a href="wishlist.php">	<input type="submit" value="Wishlist" /></a>
+					<a href="usercard.php">	<input type="submit" value="Cart" /></a>
+					<a href="contact.php"><input type="submit" value="Contact Us" /></a>					
+					<a href="login.php"><input type="submit" value="Sign Out" /></a>
 					<!--<a href="signIn.php">Sign In</a> |
 					<a href="signUn.php">Sign Un</a> |
 					<a href="contact.php">Contact Us</a>!-->					

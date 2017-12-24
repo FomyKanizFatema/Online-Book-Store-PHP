@@ -34,9 +34,9 @@ $currentUser['yyyy']="1995";
 								<td width="25%">Name</td>
 								<td width="55%">: <?php echo $currentUser['name'];?> </td>
 								<td rowspan="4" >
-									<img src="p.png" height="200" valign="left"/>
+									<img src="user.png" height="200" valign="left"/>
 									<br/>
-									<a href="ChangePicture.html" >Change</a>
+									<a href="Change_User_Picture.php" >Change</a>
 								</td>
 								</tr>
 								<tr>
@@ -50,14 +50,6 @@ $currentUser['yyyy']="1995";
 								<tr>
 								<td>Gender</td>
 								<td>: <?php echo $currentUser['gender'];?> </td>
-								</tr>
-								<tr>
-								<td>Role</td>
-								<td>: User</td>
-								</tr>
-								<tr>
-								<td>Status</td>
-								<td>: Active</td>
 								</tr>
 								<tr>
 								<td width="25%" >Date of Birth</td>

@@ -32,7 +32,7 @@
 
       <b ><!--style="<!--position: absolute;top:280px;left:400px; "-->Publisher: <?php echo "Demo"."<br/>"  ?> </b>
 	   <b ><!--style="<!--position: absolute;top:300px;left:400px; "-->Cagagory : <?php echo "Demo"."<br/>" ?> </b><br/>
-			   <b ><!--style="position: absolute;top:330px;left:400px; "--> <a  href="card.php"> Add to card  </a> </b><br/><br/>
+			   <b ><!--style="position: absolute;top:330px;left:400px; "--> <a  href="usercard12.php"> Add to card  </a> </b><br/><br/>
 
 		<b ><!--style="position: absolute;top:370px;left:400px; "-->Related Cetagory : <?php echo "Demo"."<br/>" ?> </b><br/><br/>
 

@@ -3,24 +3,39 @@
 	<body>
 		
 		<header>
-			<table border='0'width="100%" align="center" cel="10px">
+			  <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
+
+			<table border='0'width="95%" align="center" cel="10px">
 			
 			<tr >				
-			 <td border="0" width='30%'> <a href="../table/home.php"><img src="t.jpg" height="150"/> </a>
+				<td border="0" width='30%'><a href="../table/home.php"> <img src="t.jpg" height="150"/></a>
 				
 				</td>
-				<td width='30%'>
+				<td width='20%'>
 					<form action="Handler/search.php">
-					<input type="text" name="search" placeholder="  Search by Course/ Books/ Authors" size="31" height="100px" /> 
+					<input type="text" name="search" placeholder="  Search by Course/ Books/ Authors" size="31" height="100px" />
+					
+					<!--a href=""><i style="color:;padding:2px" class="fa fa-search"></i></a-->
+					
 					<input type="submit" value="Search" />
 					</form>
 				</td>
-				<td cellpadding="125px" width='30'>
-				<div align="center" >
-				<a href="home.php"><input type="submit" value="Home" /></a>
-				<a href="login.php"><input type="submit" value="Sign In/Sign Up" /></a>				
-				<a href="usercard.php">	<input type="submit" value="Cart" /></a>
-					<a href="contact.php"><input type="submit" value="Contact Us" /></a>
+				<td cellpadding="" width='50'>
+				<div align="left" >
+				
+					<select>	
+						<option value=""><a href="">Welcome User Name</a></option>
+						<option value=""><a href="homeUser.php">Home</a></option>
+						<option value=""><a href="userDashboard.php">Dashboard</a></option>
+						<option value=""><a href="View_User_Profile.php">View Profile</a></option>
+						<option value=""><a href="Edit_User_Profile.php">Edit Profile</a></option>
+						<option value=""><a href="Change_User_Picture.php">Change Profile Picture</a></option>
+						<option value=""><a href="Change_User_Pass.php">Change Password</a></option>
+					</select>
+					<a href="../table/home.php"><input type="submit" value="Home" /></a>
+					<a href="card.php"><input type="submit" value="Cart" /></a>
+					<!--input type="submit" value="Contact" /-->
+					<a href="../table/login.php"><input type="submit" value="Sign Out" /></a>
 					<!--<a href="signIn.php">Sign In</a> |
 					<a href="signUn.php">Sign Un</a> |
 					<a href="contact.php">Contact Us</a>!-->					
@@ -32,7 +47,6 @@
 				<!--Menue Bar-->
 					<table border='0' align="center" cellspacing="15px">
 						<tr>
-							
 							<td>
 								<form><!--need make hover dropdoen later-->
 									<b>CS</b><br/>
@@ -133,7 +147,7 @@
 									<option value="dataStructure">Data Structure</option>						
 									</select>
 								</form>
-							</td>
+							</td>							
 						</tr>
 					</table>
 				</td>

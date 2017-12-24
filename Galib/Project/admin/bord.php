@@ -23,16 +23,16 @@
 				</div>
 				</td>
 			</tr-->
-        <tr valign = "top" height="500">
+         <tr valign = "top" height="500">
             <td bgcolor = "" width ="">
               <b>Account</b><br/><hr><br/>
 					<ul>
-						 <a href="bord.php"> <li> Dashbord</a><br />
-				 <a href="adminpro.php"> <li> View Profile</a><br />
-				 <a href="editpro.php"> <li>Edit Profile</a><br />
-				 <a href="profile.php"> <li> Change Profile Picture</a><br />
-				<a href="reset_password.php">  <li> Change Password</a><br />
-				<a href="home.php">  <li> Logout</a><br /><br/>
+						 <a href="../admin/bord.php"> <li> Dashbord</a><br />
+				 <a href="../admin/adminpro.php"> <li> View Profile</a><br />
+				 <a href="../admin/editpro.php"> <li>Edit Profile</a><br />
+				 <a href="../admin/profile.php"> <li> Change Profile Picture</a><br />
+				<a href="../admin/reset_password.php">  <li> Change Password</a><br />
+				<a href="../table/login.php">  <li> Logout</a><br /><br/>
 				
 					</ul><br/>
 					
@@ -49,7 +49,7 @@
 						<li><a href="userdetail.php">User List</a></li>
 						<!--li><a href="Update_User_Info.php">Update User Info</a></li-->
 						<li><a href="AddUser.php">Add User</a></li>
-						<li><a href="userdetail.php">Block User</a></li>
+						<li><a href="../admin/userdetail.php">Block User</a></li>
 						<!--li><a href="Remove_User.php">Remove User</a></li-->						
 					</ul><br/>
 					
@@ -65,69 +65,31 @@
 					<ul>
 						<li><a href="employeedetail.php">Employee List</a></li>
 						<li><a href="editpro.php">Update User Info</a></li>
-						<li><a href="adduser.php">Add User</a></li>
+						<li><a href="../admin/adduser.php">Add User</a></li>
 						<!--li><a href="../admin/userdetail.php">Block User</a></li-->
 						<!--li><a href="Remove_Employee.php">Remove User</a></li-->						
 					</ul>
 					
 					
 				</td>
-            
             <td bgcolor = "" width = "1050" height = "200">
-               
-			   <form action="handler.php">
-<fieldset>
-<legend>Add Book</legend>
-
-<b>Book Name   &nbsp &nbsp &nbsp  : </b> <input name="name" type="text "/><br/><hr/>
-<b>Writer  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp : </b> <input name="writer" type="text" "/><br/><hr/>
-<!--b>User Name &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp    : </b> <input name="name" type="text" /><br/><hr/>
-<b>Password &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp     : </b> <input name="name" type="text" /><br/><hr/>
-<b>Confirm Password &nbsp : </b> <input name="name" type="text" /><br/><hr/-->
-
-
-<b>Edition &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp:</b><input name="edition"  ><br/><hr/>
-
-<b>Publisher    &nbsp &nbsp &nbsp &nbsp &nbsp:</b><input name="publisher"  ><br/><hr/>
-
-
-
-
-<b>Cetagory  &nbsp &nbsp &nbsp &nbsp &nbsp : </b>
-<select name="type">
-	
-	<option ></option>
-	<option value="Admin">CS</option>
-	<option value="Admin">COE</option>	
-	<option value="Admin">English</option>	
-	<option value="Admin">LAW</option>	
-	<option value="Admin">Programming</option>	
-	<option value="Admin">Architecture</option>		
-	<option value="user">EEE</option>
-	<option value="block">BBA</option>
-	
-</select>
-<br/><br/><hr/>
-
-<b>Picture &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp: </b> &nbsp <img width="5%" src="user.png"/>
-&nbsp <input name="picture" type="file"/><br/><hr/>
-<!--b>Joined &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp : </b><input type="text" value="since "/><hr/-->
-
-
-<a href="../admin/userdetail.php"><button type="button">Add</button></a>
-<input type="reset" value="Reset"/>&nbsp
-<!--a href="../admin/viewpro-del.php"><button type="button">Delete</button></a-->
-&nbsp <a href="../admin/userdetail.php">go back?</a>
-
-</fieldset>
-</form>
-		</form>	   
+              <!-- ADD YOUR CODE HERE...<font size="6"><?php echo $currentUser['name']; ?></font-->
+			  <table border='1' width="100%" cellpadding="15px">
+						<tr><td><a href="myOrders.php"><b>Orders<b></a><br/>Total Order : <hr/></td></tr>
+						<tr><td><a href="myList.php"><b> WishList<b></a><br/>Total Item : <hr/></td></tr>
+						<tr><td><a href="myReviews.php"><b>Reviews<b></a><br/>Total Review : <hr/></td></tr>
+						<tr><td><a href="myReviews.php"><b>New Orders<b></a><br/>order : <hr/></td></tr>
+						<tr><td><a href="myReviews.php"><b>Total Order<b></a><br/>Total order : <hr/></td></tr>
+						<tr><td><a href="myReviews.php"><b>profit<b></a><br/>profit : <hr/></td></tr>
+						
+					</table>
+			  
             </td>
          </tr>
          <tr>
             <td colspan = "2" bgcolor = "">
                <center style="color:">
-                  Copyright © 2007
+                  Copyright © 2017
                </center>
             </td>
          </tr>

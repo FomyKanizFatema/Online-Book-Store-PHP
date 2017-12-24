@@ -72,7 +72,7 @@ if($_SESSION['userlist']){
 		if($un==$user['uname'] && $pass==$user['password'] && !empty($un)&& !empty($pass)){
 			$_SESSION['currentUser']=$user;
 			//var_dump($_SESSION['currentUser']);
-			header('location:bord.php');
+			header('location:userHome.php');
 			//break;
 		}
 		else {

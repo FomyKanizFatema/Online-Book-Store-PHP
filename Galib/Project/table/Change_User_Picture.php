@@ -19,7 +19,7 @@
 				<form>
 					<fieldset>
 						<legend>Change Picture</legend>
-						<img src="p.png"height ="150"/><br/><br/>
+						<img src="user.png"height ="150"/><br/><br/>
 						<input type="file" name="changeImage"/>
 						<hr/>
 						<input type="submit" value="submit"/>
