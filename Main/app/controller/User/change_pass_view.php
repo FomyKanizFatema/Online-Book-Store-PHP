@@ -1,18 +1,14 @@
-<?php include("adminHeader.php");?>
+<?php include("userHeader.php");?>
 
 <html>
-	<head>
-		<title>Tienda De Floris</title>
-	</head>
-	<body>
-		
+<body>
 		<table border="0" width="100%">
 			<tr valign="top">
 				<td width="15%">
-					<?php include('sidebar.php');?>
+					<?php include("sidebar_view.php");?>
 				</td>
 				<td>
-								<table border='1' width="100%" cellpadding="15px">
+					<table cellpadding="25px"><tr><td>
 						<form action="passHandler.php">
 			<fieldset>
 				<legend>CHANGE PASSWORD</legend>
@@ -37,14 +33,10 @@
 					
 			</fieldset>
 		</form>
-						
-					</table>
+						</td></tr></table>
+
 				</td>
 			</tr>
 		</table>
-			
 	</body>
-	
-
 </html>
-

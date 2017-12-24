@@ -1,4 +1,5 @@
-<?php include("adminHeader.php");
+<?php include("userHeader.php");
+
 $currentUser['name']="kaniz";
 $currentUser['email']="kaniz@gmail.com";
 $currentUser['dept']="CSSE";
@@ -6,21 +7,18 @@ $currentUser['gender']="Female";
 $currentUser['dd']="07";
 $currentUser['mm']="Dec";
 $currentUser['yyyy']="1995";
+
 ?>
 
 <html>
-	<head>
-		<title>Tienda De Floris</title>
-	</head>
-	<body>
-		
+<body>
 		<table border="0" width="100%">
 			<tr valign="top">
 				<td width="15%">
-					<?php include('sidebar.php');?>
+					<?php include("sidebar_view.php");?>
 				</td>
 				<td>
-								<table cellpadding="25px" width="100%"><tr><td>
+					<table cellpadding="25px" width="100%"><tr><td>
 					
 					
 								<form action="editHandler.php" width="100%">
@@ -105,9 +103,5 @@ $currentUser['yyyy']="1995";
 				</td>
 			</tr>
 		</table>
-			
 	</body>
-	
-
 </html>
-

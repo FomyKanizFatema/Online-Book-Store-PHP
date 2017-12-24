@@ -1,18 +1,16 @@
-<?php include("adminHeader.php");?>
+<?php
+include(realpath("../../../app/view/user/user_header_view.php"));
+?>
 
 <html>
-	<head>
-		<title>Tienda De Floris</title>
-	</head>
-	<body>
-		
+<body>
 		<table border="0" width="100%">
 			<tr valign="top">
 				<td width="15%">
-					<?php include('sidebar.php');?>
+					<?php include("sidebar_view.php");?>
 				</td>
 				<td>
-								<table cellpadding="25px" width="100%"><tr><td>
+					<table cellpadding="25px" width="100%"><tr><td>
 								<fieldset>
 						<legend><h3><b>Profile</b></h3></legend>
 							<table cellpadding="15px">
@@ -47,11 +45,16 @@
 						<table valign="top">
 							<tr>
 								<td>
-									<form action="editAdminProfile.php">
+									<form action="editUserProfile.php">
 										<Button>Edit Profile</Button>
 									</form>
 								</td>
-								
+								<td>
+									 
+									<form action="">
+										<Button><font color="red">Delete Account</font></Button>
+									</form>
+								</td>
 							</tr>
 						</table>
 						
@@ -59,12 +62,9 @@
 					</fieldset>
 				
 						</td></tr></table>
+
 				</td>
 			</tr>
 		</table>
-			
 	</body>
-	
-
 </html>
-

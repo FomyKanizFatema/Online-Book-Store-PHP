@@ -1,18 +1,14 @@
-<?php include("adminHeader.php");?>
+<?php include("userHeader.php");?>
 
 <html>
-	<head>
-		<title>Tienda De Floris</title>
-	</head>
-	<body>
-		
+<body>
 		<table border="0" width="100%">
 			<tr valign="top">
 				<td width="15%">
-					<?php include('sidebar.php');?>
+					<?php include("sidebar_view.php");?>
 				</td>
 				<td>
-								<table cellpadding="25px" width="100%" align="center"><tr><td>
+					<table cellpadding="25px" width="100%" align="center"><tr><td>
 						<form>
 					<fieldset>
 						<legend>Change Picture</legend>
@@ -23,12 +19,9 @@
 					</fieldset>
 				</form>
 						</td></tr></table>
+
 				</td>
 			</tr>
 		</table>
-			
 	</body>
-	
-
 </html>
-

@@ -1,4 +1,6 @@
-<?php include("userHeader.php");?>
+<?php
+include(realpath("../../../app/view/user/user_header_view.php"));
+?>
 
 <html>
 <body>
