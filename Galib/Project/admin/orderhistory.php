@@ -1,44 +1,146 @@
-<?php
-	session_start();
-//include ('session.php');
-	$currentUser=$_SESSION['currentUser'];
-?>
+<?php include("adminHeader.php");?>
+
 <html>
-
-  <head>
-		<title>AIUB Online Book Store</title>
-	  <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
- 
-	  
-   </head>
-
-   <body>
-   
-   	<?php include("adminheader.php");?>
+	<head>
+		<title>Tienda De Floris</title>
+	</head>
+	<body>
 		
-      <table width = "100%" height="">
-  
- <tr>
+		<table border="0" width="100%">
+			<tr valign="top">
+				<td width="15%">
+					<table border="1" cellpadding="10px" width="100%">
+						<tr>
+							<td>
+				
+							<h3 align="center"><b>Account</b></h3><hr/>
+								<table border="1" cellpadding="10px">
+											<tr><td><a href="adminHome.php.php">Dashboard</a></td></tr>
+											<tr><td><a href="adminProfile.php">Profile</a></td></tr>
+											
+											<tr><td><a href="editAdminProfile.php">Edit Profile</a></td></tr>
+											<tr><td><a href="changeAdminPic.php">Change Profile Picture</a></td></tr>
+											<tr><td><a href="changePass.php">Change Password</a></td></tr>
+											
+											<tr><td><a href="../Home/home.php">Log out</a></td>	</tr>										
+								</table>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+				
+							<h3 align="center"><b>Orders</b></h3><hr/>
+								<table border="1" cellpadding="10px"width="100%">
+											<tr><td><a href="pendingOrder.php">Pending Orders</a></td></tr>
+											<tr><td><a href="profit.php">Month's History</a></td></tr>
+											<tr><td><a href="OrderHistory.php">All Orders</a></td></tr>
+																				
+								</table>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+				
+							<h3 align="center"><b>Users</b></h3><hr/>
+								<table border="1" cellpadding="10px" width="100%">
+											<tr><td><a href="userList.php">Userlist</a></td></tr>
+											<tr><td><a href="addUser.php">Add New User</a></td></tr>
+											<tr><td><a href="BlackList.php">BlackListed Users</a></td></tr>																				
+								</table>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+				
+							<h3 align="center"><b>Books</b></h3><hr/>
+								<table border="1" cellpadding="10px" width="100%">
+											<tr><td><a href="bookList.php">Booklist</a></td></tr>											
+											<tr><td><a href="AddBook.php">Add New Book</a></td></tr>
+																				
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td>
+								<h3 align="center"><b>Orders<b><h3>
+					<table cellpadding="25px" width="100%" align="center"><tr><td>
+					
+								<table border="1" width="100%" align="center">
+									<tr>
+										<th>Serial No.</th>
+										<th>Book Name</th>
+										<th>Course</th>
+										<th>Username</th>
+										<th>Contact No.</th>
+										<th>Email</th>
+										<th>Address</th>
+										
+										<th>Price</th>
+										<th>Order Date</th>
+									</tr>
+									<tr>
+										<th>Serial No.</th>
+										<th>Book Name</th>
+										<th>Course</th>
+										<th>Username</th>
+										<th>Contact No.</th>
+										<th>Email</th>
+										<th>Address</th>
+										
+										<th>Price</th>
+										<th>Order Date</th>
+									</tr>
+									<tr>
+										<th>Serial No.</th>
+										<th>Book Name</th>
+										<th>Course</th>
+										<th>Username</th>
+										<th>Contact No.</th>
+										<th>Email</th>
+										<th>Address</th>
+										
+										<th>Price</th>
+										<th>Order Date</th>
+									</tr>
+								
+								<tr>
+										<th>Serial No.</th>
+										<th>Book Name</th>
+										<th>Course</th>
+										<th>Username</th>
+										<th>Contact No.</th>
+										<th>Email</th>
+										<th>Address</th>
+										
+										<th>Price</th>
+										<th>Order Date</th>
+									</tr>
+									<tr>
+										<th>Serial No.</th>
+										<th>Book Name</th>
+										<th>Course</th>
+										<th>Username</th>
+										<th>Contact No.</th>
+										<th>Email</th>
+										<th>Address</th>
+										
+										<th>Price</th>
+										<th>Order Date</th>
+									</tr>
+								
+								
+								</table>
+						</td></tr></table>
+				</td>
+			</tr>
+		</table>
+			
+	</body>
+	
 
-<td>
-
-<legend><h4>Order History :</h4><legend><br/>
-  <img src="e.jpg" alt="Forest" width="200" height="250">
-  <td left>
-  <b ><!--align="center" style="<!--position: absolute;top:200px;left:400px; " --> Book Name : <?php echo "Demo" ?></b><br/>
-  <b  ><!--align="center" style="<!--position: absolute;top:220px;left:400px; "--> by <font size="4px" color="green"> <?php echo "Demo" ?></font></b><br/>
-  <b ><!--style="<!--position: absolute;top:240px;left:400px; "-->-----------------------------</b><br/>
-   <b ><!--style="<!--position: absolute;top:260px;left:400px; "-->Edition : <?php echo "Demo" ?> </b><br/>
-
-      <b ><!--style="<!--position: absolute;top:280px;left:400px; "-->Publisher: <?php echo "Demo"."<br/>"  ?> </b>
-	   <b ><!--style="<!--position: absolute;top:300px;left:400px; "-->Cagagory : <?php echo "Demo"."<br/>" ?> </b><br/>
-			   <b ><!--style="position: absolute;top:330px;left:400px; "--> <a  href="card.php"> Add to card  </a> </b><br/><br/>
-
-		<b ><!--style="position: absolute;top:370px;left:400px; "-->Related Cetagory : <?php echo "Demo"."<br/>" ?> </b><br/><br/>
-
-</td>
-</td>
-
- </tr>
- </table>
 </html>
+

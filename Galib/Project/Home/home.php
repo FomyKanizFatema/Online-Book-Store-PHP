@@ -1,4 +1,4 @@
-<?php include("userHeader.php");?>
+<?php include("homeHeader.php");?>
 
 <html>
 	<head>
@@ -6,31 +6,8 @@
 	</head>
 	<body>
 		
-		<table border="0" width="100%">
-			<tr valign="top">
-				<td width="15%">
-					<table border="1" cellpadding="10px">
-						<tr>
-							<td>
-				
-							<h3 align="center"><b>Account</b></h3><hr/>
-								<table border="1" cellpadding="10px">
-											<tr><td><a href="userDashboard.php">Dashboard</a></td></tr>
-											<tr><td><a href="userProfile.php">Profile</a></td></tr>
-											<tr><td><a href="userOrderHistory.php">Order History</a></td></tr>
-											<tr><td><a href="userWishlist.php">Wishlist</a></td></tr>
-											<tr><td><a href="editUserProfile.php">Edit Profile</a></td></tr>
-											<tr><td><a href="changeUserPic.php">Change Profile Picture</a></td></tr>
-											<tr><td><a href="changePass.php">Change Password</a></td></tr>
-											<tr><td><a href="userFeedBack.php">Feedback</a></td></tr>
-											<tr><td><a href="../Home/home.php">Log out</a></td>	</tr>										
-								</table>
-							</td>
-						</tr>
-					</table>
-				</td>
-				<td>
-						<table align="center" width="100%">
+		<br/>		
+		<table align="center" width="100%">
 			<tr>
 				<td>
 				<table align="center" border='1'>
@@ -38,7 +15,7 @@
 							<td><a href="item.php"><img src="c.png" height="50%" /></a></td>
 						</tr>
 						<tr>
-							<td align="center">Price : 0.0 <br/>  <button id="wishlist1"></button> | <button id="cart1"></button></td>
+							<td align="center">Price : 0.0 <br/> <a href="itemDetail.php"><input type="button" value="Details" /></a> |  <button id="wishlist1"></button> | <button id="cart1"></button></td>
 						</tr>
 					</table>
 				
@@ -49,7 +26,7 @@
 							<td><a href="item.php"><img src="c.png" height="50%" /></a></td>
 						</tr>
 						<tr>
-							<td align="center">Price : 0.0 <br/>   <button id="wishlist2"></button> | <button id="cart2"></button></td>
+							<td align="center">Price : 0.0 <br/> <a href="itemDetail.php"><input type="button" value="Details"/></a> |  <button id="wishlist2"></button> | <button id="cart2"></button></td>
 						</tr>
 					</table>
 					
@@ -61,7 +38,7 @@
 							<td><a href="item.php"><img src="c.png" height="50%" /></a></td>
 						</tr>
 						<tr>
-							<td align="center">Price : 0.0 <br/>   <button id="wishlist3"></button> | <button id="cart3"></button></td>
+							<td align="center">Price : 0.0 <br/> <a href="itemDetail.php"><input type="button" value="Details"/></a> |  <button id="wishlist3"></button> | <button id="cart3"></button></td>
 						</tr>
 					</table>
 				
@@ -72,7 +49,7 @@
 							<td><a href="item.php"><img src="c.png" height="50%" /></a></td>
 						</tr>
 						<tr>
-							<td align="center">Price : 0.0 <br/>  <button id="wishlist4"></button> | <button id="cart4"></button></td>
+							<td align="center">Price : 0.0 <br/> <a href="itemDetail.php"><input type="button" value="Details"/></a> |  <button id="wishlist4"></button> | <button id="cart4"></button></td>
 						</tr>
 					</table>
 					
@@ -83,7 +60,7 @@
 							<td><a href="item.php"><img src="c.png" height="50%" /></a></td>
 						</tr>
 						<tr>
-							<td align="center">Price : 0.0 <br/>  <button id="wishlist5"></button> | <button id="cart5"></button></td>
+							<td align="center">Price : 0.0 <br/> <a href="itemDetail.php"><input type="button" value="Details"/></a> |  <button id="wishlist5"></button> | <button id="cart5"></button></td>
 						</tr>
 					</table>
 				
@@ -94,7 +71,7 @@
 							<td><a href="item.php"><img src="c.png" height="50%" /></a></td>
 						</tr>
 						<tr>
-							<td align="center">Price : 0.0 <br/>   <button id="wishlist6"></button> | <button id="cart6"></button></td>
+							<td align="center">Price : 0.0 <br/> <a href="itemDetail.php"><input type="button" value="Details"/></a> |  <button id="wishlist6"></button> | <button id="cart6"></button></td>
 						</tr>
 					</table>
 					
@@ -106,7 +83,7 @@
 							<td><a href="item.php"><img src="c.png" height="50%" /></a></td>
 						</tr>
 						<tr>
-							<td align="center">Price : 0.0 <br/>   <button id="wishlist7"></button> | <button id="cart7"></button></td>
+							<td align="center">Price : 0.0 <br/> <a href="itemDetail.php"><input type="button" value="Details"/></a> |  <button id="wishlist7"></button> | <button id="cart7"></button></td>
 						</tr>
 					</table>
 				
@@ -117,7 +94,7 @@
 							<td><a href="item.php"><img src="c.png" height="50%" /></a></td>
 						</tr>
 						<tr>
-							<td align="center">Price : 0.0 <br/>  <button id="wishlist8"></button> | <button id="cart8"></button></td>
+							<td align="center">Price : 0.0 <br/> <a href="itemDetail.php"><input type="button" value="Details"/></a> |  <button id="wishlist8"></button> | <button id="cart8"></button></td>
 						</tr>
 					</table>
 					
@@ -131,7 +108,7 @@
 							<td><a href="item.php"><img src="c.png" height="50%" /></a></td>
 						</tr>
 						<tr>
-							<td align="center">Price : 0.0 <br/>   <button id="wishlist9"></button> | <button id="cart9"></button></td>
+							<td align="center">Price : 0.0 <br/> <a href="itemDetail.php"><input type="button" value="Details"/></a> |  <button id="wishlist9"></button> | <button id="cart9"></button></td>
 						</tr>
 					</table>
 				
@@ -142,7 +119,7 @@
 							<td><a href="item.php"><img src="c.png" height="50%" /></a></td>
 						</tr>
 						<tr>
-							<td align="center">Price : 0.0 <br/>  <button id="wishlist10"></button> | <button id="cart10"></button></td>
+							<td align="center">Price : 0.0 <br/> <a href="itemDetail.php"><input type="button" value="Details"/></a> |  <button id="wishlist10"></button> | <button id="cart10"></button></td>
 						</tr>
 					</table>
 					
@@ -154,7 +131,7 @@
 							<td><a href="item.php"><img src="c.png" height="50%" /></a></td>
 						</tr>
 						<tr>
-							<td align="center">Price : 0.0 <br/>   <button id="wishlist11"></button> | <button id="cart11"></button></td>
+							<td align="center">Price : 0.0 <br/> <a href="itemDetail.php"><input type="button" value="Details"/></a> |  <button id="wishlist11"></button> | <button id="cart11"></button></td>
 						</tr>
 					</table>
 				
@@ -165,7 +142,7 @@
 							<td><a href="item.php"><img src="c.png" height="50%" /></a></td>
 						</tr>
 						<tr>
-							<td align="center">Price : 0.0 <br/>   <button id="wishlist12"></button> | <button id="cart12"></button></td>
+							<td align="center">Price : 0.0 <br/> <a href="itemDetail.php"><input type="button" value="Details"/></a> |  <button id="wishlist12"></button> | <button id="cart12"></button></td>
 						</tr>
 					</table>
 					
@@ -176,7 +153,7 @@
 							<td><a href="item.php"><img src="c.png" height="50%" /></a></td>
 						</tr>
 						<tr>
-							<td align="center">Price : 0.0 <br/>   <button id="wishlist13"></button> | <button id="cart13"></button></td>
+							<td align="center">Price : 0.0 <br/> <a href="itemDetail.php"><input type="button" value="Details"/></a> |  <button id="wishlist13"></button> | <button id="cart13"></button></td>
 						</tr>
 					</table>
 				
@@ -187,7 +164,7 @@
 							<td><a href="item.php"><img src="c.png" height="50%" /></a></td>
 						</tr>
 						<tr>
-							<td align="center">Price : 0.0 <br/>   <button id="wishlist14"></button> | <button id="cart14"></button></td>
+							<td align="center">Price : 0.0 <br/> <a href="itemDetail.php"><input type="button" value="Details"/></a> |  <button id="wishlist14"></button> | <button id="cart14"></button></td>
 						</tr>
 					</table>
 					
@@ -199,7 +176,7 @@
 							<td><a href="item.php"><img src="c.png" height="50%" /></a></td>
 						</tr>
 						<tr>
-							<td align="center">Price : 0.0 <br/>   <button id="wishlist15"></button> | <button id="cart15"></button></td>
+							<td align="center">Price : 0.0 <br/> <a href="itemDetail.php"><input type="button" value="Details"/></a> |  <button id="wishlist15"></button> | <button id="cart15"></button></td>
 						</tr>
 					</table>
 				
@@ -210,7 +187,7 @@
 							<td><a href="item.php"><img src="c.png" height="50%" /></a></td>
 						</tr>
 						<tr>
-							<td align="center">Price : 0.0 <br/>   <button id="wishlist16"></button> | <button id="cart16"></button></td>
+							<td align="center">Price : 0.0 <br/> <a href="itemDetail.php"><input type="button" value="Details"/></a> |  <button id="wishlist16"></button> | <button id="cart16"></button></td>
 						</tr>
 					</table>
 					
@@ -218,9 +195,6 @@
 			</tr>
 			
 		</table>
-				</td>
-			</tr>
-		<table>
 			
 	</body>
 	

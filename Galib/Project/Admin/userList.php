@@ -33,7 +33,7 @@
 							<h3 align="center"><b>Orders</b></h3><hr/>
 								<table border="1" cellpadding="10px"width="100%">
 											<tr><td><a href="pendingOrder.php">Pending Orders</a></td></tr>
-											<tr><td><a href="revenue.php">Month's History</a></td></tr>
+											<tr><td><a href="profit.php">Month's History</a></td></tr>
 											<tr><td><a href="OrderHistory.php">All Orders</a></td></tr>
 																				
 								</table>
@@ -66,61 +66,83 @@
 					</table>
 				</td>
 				<td>
+								<h3 align="center"><b>UserList<b><h3>
+					<table cellpadding="25px" width="100%" align="center"><tr><td>
 					
-								<form action="signIn.php">
-								<h3 align="center"><b>Add New Book<b><h3>
-						<fieldset>
-								<table align="center" id="formcontainer">
+								<table border="1" width="100%" align="center">
 									<tr>
-										<br/>
-										<td><b>Book Name </b></td>				
-										<td><b>: </b><input type="text" name="bname" width="100%"></td>				
-									</tr>
-									
-									<tr>
-										<td><b>Author </b></td>				
-										<td><b>: </b><input type="text" name="author"></td>
-									</tr>
-									
-									<tr>
-										<td><b>Buying Price </b></td>				
-										<td><b>: </b><input type="text" name="price"></td>
-									</tr>
-									<tr>
-										<td><b>Course</b></td>				
-										<td><b>: </b><input type="text" name="author"></td>
-									</tr>
-									
-									<tr>
-										<td><b>Deparment </b></td>				
-										<td><b>: </b><input type="text" name="price"></td>
-									</tr>
-									
-									<tr>
-										<td><b>Number of Copies </b></td>				
-										<td><b>: </b><input type="text" name="price"></td>
-									</tr>
-									
-									
-									
-									
-									
-									
-									<tr>
-										<td colspan='2' align="center">
-											<br/>
-											<input type="submit" value="Submit" >
-											<input type="submit" value="Reset" >
-										</td>
+										<th>Serial No.</th>
+										<th>Name</th>
+										<th>Username</th>
+										<th>Email</th>
+										<th>Contact No.</th>
+										<th>Department</th>
+										<th>Blood Group</th>										
+										<th>Birthdate</th>
+										<th>Role</th>
+										<th>Status</th>
+										<th>Action</th>
 										
 									</tr>
-								</table>						
+									<tr>
+										<th>Serial No.</th>
+										<th>Name</th>
+										<th>Username</th>
+										<th>Email</th>
+										<th>Contact No.</th>
+										<th>Department</th>
+										<th>Blood Group</th>										
+										<th>Birthdate</th>
+										<th>Role</th>
+										<th>Status</th>
+										<th><a href="">Update</a> | <a href="">Block</a> | <a href="">Remove</a></th>
+										
+									</tr>
+									<tr>
+										<th>Serial No.</th>
+										<th>Name</th>
+										<th>Username</th>
+										<th>Email</th>
+										<th>Contact No.</th>
+										<th>Department</th>
+										<th>Blood Group</th>										
+										<th>Birthdate</th>
+										<th>Role</th>
+										<th>Status</th>
+										<th><a href="">Update</a> | <a href="">Block</a> | <a href="">Remove</a></th>
+										
+									</tr>
+								
+								<tr>
+										<th>Serial No.</th>
+										<th>Name</th>
+										<th>Username</th>
+										<th>Email</th>
+										<th>Contact No.</th>
+										<th>Department</th>
+										<th>Blood Group</th>										
+										<th>Birthdate</th>
+										<th>Role</th>
+										<th>Status</th>
+										<th><a href="">Update</a> | <a href="">Block</a> | <a href="">Remove</a></th>
+									</tr>
+									<tr>
+										<th>Serial No.</th>
+										<th>Name</th>
+										<th>Username</th>
+										<th>Email</th>
+										<th>Contact No.</th>
+										<th>Department</th>
+										<th>Blood Group</th>										
+										<th>Birthdate</th>
+										<th>Role</th>
+										<th>Status</th>
+										<th><a href="">Update</a> | <a href="">Block</a> | <a href="">Remove</a></th>
+									</tr>
 								
 								
-						</fieldset>
-					</form>
-						
-					</table>
+								</table>
+						</td></tr></table>
 				</td>
 			</tr>
 		</table>

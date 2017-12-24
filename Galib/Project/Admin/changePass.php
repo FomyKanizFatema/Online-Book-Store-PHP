@@ -66,59 +66,31 @@
 					</table>
 				</td>
 				<td>
+								<table border='1' width="100%" cellpadding="15px">
+						<form action="passHandler.php">
+			<fieldset>
+				<legend>CHANGE PASSWORD</legend>
+					<table>
+						<tr>
+						<td><b>Current Password  </b></td>				
+						<td><b>: </b><input type="text" name="old"/></td>
+						</tr>
+						<tr>
+						<td><b>New Password </b></td>	
+						<td><b>: </b><input type="text" name="new"/></td>
+						</tr>
+						<tr>
+						<td><b>Retype New Password </b></td>	
+						<td><b>: </b><input type="text" name="rnew"/></td>
+						</tr>
+						
+					</table>
+					<hr>					
+					<br/>
+					<input type="submit" value="Submit">				
 					
-								<form action="signIn.php">
-								<h3 align="center"><b>Add New Book<b><h3>
-						<fieldset>
-								<table align="center" id="formcontainer">
-									<tr>
-										<br/>
-										<td><b>Book Name </b></td>				
-										<td><b>: </b><input type="text" name="bname" width="100%"></td>				
-									</tr>
-									
-									<tr>
-										<td><b>Author </b></td>				
-										<td><b>: </b><input type="text" name="author"></td>
-									</tr>
-									
-									<tr>
-										<td><b>Buying Price </b></td>				
-										<td><b>: </b><input type="text" name="price"></td>
-									</tr>
-									<tr>
-										<td><b>Course</b></td>				
-										<td><b>: </b><input type="text" name="author"></td>
-									</tr>
-									
-									<tr>
-										<td><b>Deparment </b></td>				
-										<td><b>: </b><input type="text" name="price"></td>
-									</tr>
-									
-									<tr>
-										<td><b>Number of Copies </b></td>				
-										<td><b>: </b><input type="text" name="price"></td>
-									</tr>
-									
-									
-									
-									
-									
-									
-									<tr>
-										<td colspan='2' align="center">
-											<br/>
-											<input type="submit" value="Submit" >
-											<input type="submit" value="Reset" >
-										</td>
-										
-									</tr>
-								</table>						
-								
-								
-						</fieldset>
-					</form>
+			</fieldset>
+		</form>
 						
 					</table>
 				</td>

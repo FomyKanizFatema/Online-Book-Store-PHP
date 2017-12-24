@@ -66,61 +66,75 @@
 					</table>
 				</td>
 				<td>
+								<h3 align="center"><b>Pending Orders<b><h3>
+					<table cellpadding="25px" width="100%" align="center"><tr><td>
 					
-								<form action="signIn.php">
-								<h3 align="center"><b>Add New Book<b><h3>
-						<fieldset>
-								<table align="center" id="formcontainer">
+								<table border="1" width="100%" align="center">
 									<tr>
-										<br/>
-										<td><b>Book Name </b></td>				
-										<td><b>: </b><input type="text" name="bname" width="100%"></td>				
-									</tr>
-									
-									<tr>
-										<td><b>Author </b></td>				
-										<td><b>: </b><input type="text" name="author"></td>
-									</tr>
-									
-									<tr>
-										<td><b>Buying Price </b></td>				
-										<td><b>: </b><input type="text" name="price"></td>
-									</tr>
-									<tr>
-										<td><b>Course</b></td>				
-										<td><b>: </b><input type="text" name="author"></td>
-									</tr>
-									
-									<tr>
-										<td><b>Deparment </b></td>				
-										<td><b>: </b><input type="text" name="price"></td>
-									</tr>
-									
-									<tr>
-										<td><b>Number of Copies </b></td>				
-										<td><b>: </b><input type="text" name="price"></td>
-									</tr>
-									
-									
-									
-									
-									
-									
-									<tr>
-										<td colspan='2' align="center">
-											<br/>
-											<input type="submit" value="Submit" >
-											<input type="submit" value="Reset" >
-										</td>
+										<th>Serial No.</th>
+										<th>Book Name</th>
+										<th>Course</th>
+										<th>Username</th>
+										<th>Contact No.</th>
+										<th>Email</th>
+										<th>Address</th>
 										
+										<th>Price</th>
+										<th>Order Date</th>
 									</tr>
-								</table>						
+									<tr>
+										<th>Serial No.</th>
+										<th>Book Name</th>
+										<th>Course</th>
+										<th>Username</th>
+										<th>Contact No.</th>
+										<th>Email</th>
+										<th>Address</th>
+										
+										<th>Price</th>
+										<th>Order Date</th>
+									</tr>
+									<tr>
+										<th>Serial No.</th>
+										<th>Book Name</th>
+										<th>Course</th>
+										<th>Username</th>
+										<th>Contact No.</th>
+										<th>Email</th>
+										<th>Address</th>
+										
+										<th>Price</th>
+										<th>Order Date</th>
+									</tr>
+								
+								<tr>
+										<th>Serial No.</th>
+										<th>Book Name</th>
+										<th>Course</th>
+										<th>Username</th>
+										<th>Contact No.</th>
+										<th>Email</th>
+										<th>Address</th>
+										
+										<th>Price</th>
+										<th>Order Date</th>
+									</tr>
+									<tr>
+										<th>Serial No.</th>
+										<th>Book Name</th>
+										<th>Course</th>
+										<th>Username</th>
+										<th>Contact No.</th>
+										<th>Email</th>
+										<th>Address</th>
+										
+										<th>Price</th>
+										<th>Order Date</th>
+									</tr>
 								
 								
-						</fieldset>
-					</form>
-						
-					</table>
+								</table>
+						</td></tr></table>
 				</td>
 			</tr>
 		</table>

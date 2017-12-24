@@ -19,7 +19,7 @@
 											<tr><td><a href="changeUserPic.php">Change Profile Picture</a></td></tr>
 											<tr><td><a href="changePass.php">Change Password</a></td></tr>
 											<tr><td><a href="userFeedBack.php">Feedback</a></td></tr>
-											<tr><td><a href="../Home/home.php">Log out</a></td>	</tr>									
+											<tr><td><a href="../Home/home.php">Log out</a></td>	</tr>											
 								</table>
 							</td>
 						</tr>
@@ -27,15 +27,27 @@
 				</td>
 				<td>
 					<table cellpadding="25px" width="100%"><tr><td>
-								<table border='1' width="100%" cellpadding="15px">
-						<tr width="100%"><td><a href="myOrders.php"><b>My Orders<b></a><br/>Total Order : <hr/></td></tr>
-						<tr width="100%"><td><a href="myList.php"><b>My WishList<b></a><br/>Total Item : <hr/></td></tr>
-						<trwidth="100%"><td><a href="myReviews.php"><b>My Reviews<b></a><br/>Total Review : <hr/></td></tr>
-					</table>
+						 <form action="" method="">
+							<fieldset>
+								<legend><h3><b>Send Feedback</b></h3></legend>
+								<input type="text" name="feedback" id="feedback" size="50"/><br/><br/>
+								<input type="submit" value="Submit"/>
+							</fieldset>
+						 </form>
 						</td></tr></table>
 
 				</td>
 			</tr>
 		</table>
 	</body>
+	
+	
+	<script type="text/javascript">
+			
+			
+			document.getElementById('feedback').style.height="200px";
+			document.getElementById('feedback').style.width="500px";
+			
+			
+	</script>
 </html>

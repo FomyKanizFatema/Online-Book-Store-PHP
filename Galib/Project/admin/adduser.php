@@ -1,152 +1,186 @@
-<?php
-	session_start();
-//include ('session.php');
-	$currentUser=$_SESSION['currentUser'];
-?>
-<html>
+<?php include("adminHeader.php");?>
 
-   <head>
-		<title>AIUB Online Book Store</title>
+<html>
+	<head>
+		<title>Tienda De Floris</title>
 	</head>
 	<body>
-		<?php include("adminheader.php");?>
-		<table border="1" width="100%" align="center" cellpadding="10px">
-			<!--tr >				
-				<td border="0" colspan="2"><!--div align="center"--> <!--img src="t.jpg" width="10%"><!--div align="center"><b>TIENDA DE FLORIS</b></div-->
+		
+		<table border="0" width="100%">
+			<tr valign="top">
+				<td width="15%">
+					<table border="1" cellpadding="10px" width="100%">
+						<tr>
+							<td>
 				
-				
-				<!--div align="right" cellpadding="-25">
-					Logged in as <a href="Dashboard.php"><!--?php echo "User"/*$currentUser['name']*/;?> </a>|<a href="Users.php">User List</a>|
-					<a href="Books.php">Book List</a>|<a href="Employee.php">Employee List</a>|
-					<a href="Logout.php">Logout</a>
-					
-				</div>
-				</td>
-			</tr-->
-         <tr valign = "top" height="500">
-            <td bgcolor = "" width ="">
-              <b>Account</b><br/><hr><br/>
-					<ul>
-						 <a href="../admin/bord.php"> <li> Dashbord</a><br />
-				 <a href="../admin/adminpro.php"> <li> View Profile</a><br />
-				 <a href="../admin/editpro.php"> <li>Edit Profile</a><br />
-				 <a href="../admin/profile.php"> <li> Change Profile Picture</a><br />
-				<a href="../admin/reset_password.php">  <li> Change Password</a><br />
-				<!--a href="../user/login.php">  <li> Logout</a><br /><br/-->
-				
-					</ul><br/>
-					
-					<hr/><b>Orders</b><br/><hr><br/>
-					<ul>
-						<li><a href="card.php"> Order List</a></li>
-						<!--li><a href="Order/Order_History.php">Order_History</a></li-->
-												
+							<h3 align="center"><b>Account</b></h3><hr/>
+								<table border="1" cellpadding="10px">
+											<tr><td><a href="adminHome.php.php">Dashboard</a></td></tr>
+											<tr><td><a href="adminProfile.php">Profile</a></td></tr>
 											
-					</ul><br/>
-					
-					<hr/><b>Users</b><br/><hr><br/>
-					<ul>
-						<li><a href="userdetail.php">User List</a></li>
-						<!--li><a href="Update_User_Info.php">Update User Info</a></li-->
-						<li><a href="AddUser.php">Add User</a></li>
-						<li><a href="../admin/userdetail.php">Block User</a></li>
-						<!--li><a href="Remove_User.php">Remove User</a></li-->						
-					</ul><br/>
-					
-					<hr/><b>Books</b><br/><hr><br/>
-					<ul>
-						<li><a href="booklist.php">Book List</a></li>
-						<li><a href="UpdateBookInfo.php">Update Book Info</a></li>
-						<li><a href="addbook.php">Add Book</a></li>						
-						<!--li><a href="Delete_Book.php">Delete Book</a></li-->						
-					</ul><br/>
-					
-					<hr/><b>Employees</b><br/><hr/><br/>
-					<ul>
-						<li><a href="employeedetail.php">Employee List</a></li>
-						<li><a href="editpro.php">Update User Info</a></li>
-						<li><a href="../admin/adduser.php">Add User</a></li>
-						<!--li><a href="../admin/userdetail.php">Block User</a></li-->
-						<!--li><a href="Remove_Employee.php">Remove User</a></li-->						
-					</ul>
-					
-					
+											<tr><td><a href="editAdminProfile.php">Edit Profile</a></td></tr>
+											<tr><td><a href="changeAdminPic.php">Change Profile Picture</a></td></tr>
+											<tr><td><a href="changePass.php">Change Password</a></td></tr>
+											
+											<tr><td><a href="../Home/home.php">Log out</a></td>	</tr>										
+								</table>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+				
+							<h3 align="center"><b>Orders</b></h3><hr/>
+								<table border="1" cellpadding="10px"width="100%">
+											<tr><td><a href="pendingOrder.php">Pending Orders</a></td></tr>
+											<tr><td><a href="revenue.php">Month's History</a></td></tr>
+											<tr><td><a href="OrderHistory.php">All Orders</a></td></tr>
+																				
+								</table>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+				
+							<h3 align="center"><b>Users</b></h3><hr/>
+								<table border="1" cellpadding="10px" width="100%">
+											<tr><td><a href="userList.php">Userlist</a></td></tr>
+											<tr><td><a href="addUser.php">Add New User</a></td></tr>
+											<tr><td><a href="BlackList.php">BlackListed Users</a></td></tr>																				
+								</table>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+				
+							<h3 align="center"><b>Books</b></h3><hr/>
+								<table border="1" cellpadding="10px" width="100%">
+											<tr><td><a href="bookList.php">Booklist</a></td></tr>											
+											<tr><td><a href="AddBook.php">Add New Book</a></td></tr>
+																				
+								</table>
+							</td>
+						</tr>
+					</table>
 				</td>
-            
-            <td bgcolor = "" width = "1050" height = "200">
-               
-			   <form action="../user/handler.php">
-<fieldset>
-<legend>Edit Profile</legend>
-
-<b>Name &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  : </b> <input name="name" type="text" "/><br/><hr/>
-<b>Email &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp : </b> <input name="email" type="text" "/><img src="i.png"width="30" title="example@gmail.com"/><br/><hr/>
-<!--b>User Name &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp    : </b> <input name="name" type="text" /><br/><hr/>
-<b>Password &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp     : </b> <input name="name" type="text" /><br/><hr/>
-<b>Confirm Password &nbsp : </b> <input name="name" type="text" /><br/><hr/-->
-
-
-<b>Gender &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp:</b>
-<?php $m="male";$f="female";$o="other"?>
-<input name="gender" type="radio" value="male" >Male
-<input name="gender" type="radio" value="female" >Female
-<input name="gender" type="radio" value="other" >Other<br/><br/>
-
-
-
-
-<table  >
-<td><b>Date of Birth  &nbsp &nbsp &nbsp &nbsp &nbsp :</b>
-<td>dd<br/><input name="dd" type="text"  >  /
-<td>mm<br/><input name="mm" type="text"  > /
-<td>yyyy<br/><input name="yyyy" type="text" ><td>
-</td>
-
-</table>
-<hr/>
-
-<b>Role  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp : </b>
-<select name="type">
+				<td>
+					
+								<form action="signIn.php">
+								<h3 align="center"><b>Add New User<b><h3>
+						<fieldset>
+								<table align="center" id="formcontainer">
+									<tr>
+										<br/>
+										<td><b>Name </b></td>				
+										<td><b>: </b><input type="text" name="name" width="100%"></td>				
+									</tr>
+									
+									<tr>
+										<td><b>Email </b></td>				
+										<td><b>: </b><input type="text" name="email"></td>
+									</tr>
+									
+									<tr>
+										<td><b>User Name </b></td>				
+										<td><b>: </b><input type="text" name="uname"></td>
+									</tr>
+									
+									<tr>
+										<td><b>Department <b></td>	
+										<td>
+											<select name='dept'>
+												<option value='CS'>CSE/CSSE/CS/SE</option>
+												<option value='EEE'>EEE</option>
+												<option value='COE'>COE</option>
+												<option value='BBA'>BBA</option>
+												<option value='Arch'>Architecture</option>
+												<option value='Law'>Law</option>
+											</select>
+										</td>
+									</tr>
+									
+									<tr>
+										<td colspan="2">
+											<fieldset>
+												<legend>Gender</legend>
+													<input type="radio" name="gender" value="male"/>Male
+													<input type="radio" name="gender" value="female"/>Female
+													<input type="radio" name="gender" value="other"/>Other
+											</fieldset>
+										</td>
+									</tr>
+									
+									<tr >
+										<td colspan="2">
+										
+											<fieldset>
+												<legend>Date of Birth</legend>
+												<table id="birthdateContainer">
+													<tr>
+														<td>dd</td>
+														<td/>
+														<td>mm</td>
+														<td/>
+														<td>yyyy</td>
+													</tr>
+													<tr valign="top">
+														<td>
+															<!--<form action="handler.php">-->
+																<input type="dd" name="date" size='1'>
+															<!--</form>-->
+														</td>
+														<td>/</td>
+														<td>
+															<!--<form action="handler.php">-->
+																<input type="text" name="month" size='1'>
+															<!--</form>-->
+														</td>
+														<td>/</td>
+														<td>
+															<!--<form action="handler.php">-->
+																<input type="text" name="year" size='2'>
+															<!--</form>-->
+														</td>
+													</tr>
+													
+													<tr>
+														<td><b>Default Password <b></td>	
+														<td><b>: </b><input type="text" name="pass"></td>
+													</tr>
+									
+													<tr>
+														<td><b>Role <b></td>	
+														<td><b>: </b><input type="text" name="role"></td>
+													</tr>	
+													
+												</table>
+											</fieldset>
+											
+										</td>
+									</tr>
+									<tr>
+										<td colspan='2' align="center">
+											<br/>
+											<input type="submit" value="Submit" >
+											<input type="submit" value="Reset" >
+										</td>
+										
+									</tr>
+								</table>						
+								
+								
+						</fieldset>
+					</form>
+						
+					</table>
+				</td>
+			</tr>
+		</table>
+			
+	</body>
 	
-	<option ></option>
-	<option value="Admin">Admin</option>	
-	<option value="user">User</option>
-	<option value="block">Exicutive</option>
-	
-</select>
-<br/><br/><hr/>
-<b>Status &nbsp  &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp : </b>
-<select name="type">
-	
-	<option ></option>
-	<option value="Admin">Active</option>	
-	<option value="user">Pending</option>
-	<option value="block">Block</option>
-	
-</select>
-<br/><br/><hr/>
-<!--b>Joined &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp : </b><input type="text" value="since "/><hr/-->
-
-
-<a href="../admin/userdetail.php"><button type="button">Add</button></a>
-<input type="reset" value="Reset"/>&nbsp
-<!--a href="../admin/viewpro-del.php"><button type="button">Delete</button></a-->
-&nbsp <a href="../admin/userdetail.php">go back?</a>
-
-</fieldset>
-</form>
-		</form>	   
-            </td>
-         </tr>
-         <tr>
-            <td colspan = "2" bgcolor = "">
-               <center style="color:">
-                  Copyright © 2007
-               </center>
-            </td>
-         </tr>
-         
-      </table>
-   </body>
 
 </html>
+

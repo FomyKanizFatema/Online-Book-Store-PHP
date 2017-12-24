@@ -66,61 +66,53 @@
 					</table>
 				</td>
 				<td>
-					
-								<form action="signIn.php">
-								<h3 align="center"><b>Add New Book<b><h3>
-						<fieldset>
-								<table align="center" id="formcontainer">
-									<tr>
-										<br/>
-										<td><b>Book Name </b></td>				
-										<td><b>: </b><input type="text" name="bname" width="100%"></td>				
-									</tr>
-									
-									<tr>
-										<td><b>Author </b></td>				
-										<td><b>: </b><input type="text" name="author"></td>
-									</tr>
-									
-									<tr>
-										<td><b>Buying Price </b></td>				
-										<td><b>: </b><input type="text" name="price"></td>
-									</tr>
-									<tr>
-										<td><b>Course</b></td>				
-										<td><b>: </b><input type="text" name="author"></td>
-									</tr>
-									
-									<tr>
-										<td><b>Deparment </b></td>				
-										<td><b>: </b><input type="text" name="price"></td>
-									</tr>
-									
-									<tr>
-										<td><b>Number of Copies </b></td>				
-										<td><b>: </b><input type="text" name="price"></td>
-									</tr>
-									
-									
-									
-									
-									
-									
-									<tr>
-										<td colspan='2' align="center">
-											<br/>
-											<input type="submit" value="Submit" >
-											<input type="submit" value="Reset" >
-										</td>
-										
-									</tr>
-								</table>						
-								
-								
-						</fieldset>
-					</form>
+								<table cellpadding="25px" width="100%"><tr><td>
+								<fieldset>
+						<legend><h3><b>Profile</b></h3></legend>
+							<table cellpadding="15px">
+								<tr>
+								<td width="25%">Name</td>
+								<td width="55%">: <?php echo "Fomy Kaniz Fatema" ;?> </td>
+								<td rowspan="4" >
+									<img src="../Images/user.png" height="200" valign="left"/>
+									<br/>
+									<a href="changeUserPic.php" >Change</a>
+								</td>
+								</tr>
+								<tr>
+								<td>Email</td>
+								<td>:  kfomy.aiub@gmail.com </td>
+								</tr>
+								<tr>
+								<td>Department</td>
+								<td>: <?php echo "CSSE";?> </td>
+								</tr>
+								<tr>
+								<td>Gender</td>
+								<td>: <?php echo "Female";?> </td>
+								</tr>
+								<tr>
+								<td width="25%" >Date of Birth</td>
+								<td>: <?php echo "07"."/"."12"."/"."1995";?> </td>
+								</tr>
+							</table>						
+						<hr/>
 						
-					</table>
+						<table valign="top">
+							<tr>
+								<td>
+									<form action="editAdminProfile.php">
+										<Button>Edit Profile</Button>
+									</form>
+								</td>
+								
+							</tr>
+						</table>
+						
+						
+					</fieldset>
+				
+						</td></tr></table>
 				</td>
 			</tr>
 		</table>
