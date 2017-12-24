@@ -1,6 +1,6 @@
 <?php
 //-------------------------//Links of Images//-------------------------
-			$contactImg="../../../Images/contactus.png";
+			/*$contactImg="../../../Images/contactus.png";
 			$logImg="../../../Images/loginn.png";
 			$bookImg="../../../Images/c.png";
 			$logo="../../../Images/logo.jpg";
@@ -8,19 +8,29 @@
 			$cartImg="../../../Images/cart.png";
 			$wishlistImg="../../../Images/wishlist.png";
 			$userImg="../../../Images/user.png";
-			$homeImg="../../../Images/home2.png";
+			$homeImg="../../../Images/home2.png";*/
+			
+			$contactImg="Images/contactus.png";
+			$logImg="Images/loginn.png";
+			$bookImg="Images/c.png";
+			$logo="Images/logo.jpg";
+			$searchImg="Images/searchIcon.png";
+			$cartImg="Images/cart.png";
+			$wishlistImg="Images/wishlist.png";
+			$userImg="Images/user.png";
+			$homeImg="Images/home2.png";
 //-------------------------------////----------------------------------
 
 //-------------------------//Home//-------------------------
-	$homeView="../../../App/View/Home/home_view.php";
-	$homeController="../../../App/Controller/Home/home_controller.php";
-	$homeService="../../../Business_Layer/Home/home_service.php";
+	$homeView="../../../App/View/Shared/home_view.php";
+	$homeController="/../Controller/Shared/home.php";
+	$homeService="../../../Service/Shared/home.php";
 //-------------------------------////----------------------------------
 
 //-------------------------//LogPage//-------------------------
-	$logView="../../../App/View/Home/log_view.php";
-	$logController="../../../App/Controller/Home/log_controller.php";
-	$logService="../../../Business_Layer/Home/log_service.php";
+	$logView="/../../../App/View/Shared/log_view.php";
+	$logController="../../../App/Controller/Shared/log_controller.php";
+	$logService="../../../Service/Shared/log_service.php";
 	
 	//-------------------------//Login//-------------------------
 	$logView="../../../App/View/Home/log_view.php";
@@ -96,6 +106,53 @@ $logOut_view="../../../App/View/User/logout_view.php";
 $logOut_controller="../../../App/Controller/User/logout.php";
 $logOut_service="../../../Service/User/logout.php";
 
+///Admin
+
+$AdminHome_view="../../../App/View/Admin/home_view.php";
+$AdminHome_controller="../../../App/Controller/Admin/home.php";
+$AdminHome_service="../../../Service/Admin/home.php";
+
+$AddBook_view="../../../App/View/Admin/add_book_view.php";
+$AddBook_controller="../../../App/Controller/Admin/add_book.php";
+$AddBook_service="../../../Service/Admin/add_book.php";
+
+$AddUser_view="../../../App/View/Admin/add_user_view.php";
+$AddUser_controller="../../../App/Controller/Admin/add_user.php";
+$AddUser_service="../../../Service/Admin/add_user.php";
+
+$AdminProfile_view="../../../App/View/Admin/Admin_profile_view.php";
+$AdminProfile_controller="../../../App/Controller/Admin/profile.php";
+$AdminProfile_service="../../../Service/Admin/profile.php";
+
+
+$EditAdminProfile_view="../../../App/View/Admin/edit_admin_profile_view.php";
+$EditAdminProfile_controller="../../../App/Controller/Admin/edit_profile.php";
+$EditAdminProfile_service="../../../Service/Admin/edit_profile.php";
+
+
+$blackList_view="../../../App/View/Admin/blacklist_view.php";
+$blackList_controller="../../../App/Controller/Admin/blacklist.php";
+$blackList_service="../../../Service/Admin/blacklist.php";
+
+$bookList_view="../../../App/View/Admin/booklist_view.php";
+$bookList_controller="../../../App/Controller/Admin/booklist.php";
+$bookList_service="../../../Service/Admin/booklist.php";
+
+$AdminChangePass_view="../../../App/View/Admin/admin_change_pass_view.php";
+$AdminChangePass_controller="../../../App/Controller/Admin/change_pass.php";
+$AdminChangePass_service="../../../Service/Admin/change_pass.php";
+
+$AdminChangePic_view="../../../App/View/Admin/admin_change_pic_view.php";
+$AdminChangePic_controller="../../../App/Controller/Admin/change_pic.php";
+$AdminChangePic_service="../../../Service/Admin/change_pic.php";
+
+$AdminOrderHistory_view="../../../App/View/Admin/order_history_view.php";
+$AdminOrderHistory_controller="../../../App/Controller/Admin/order_history.php";
+$AdminOrderHistory_service="../../../Service/Admin/order_history.php";
+
+$AdminOrderHistory_view="../../../App/View/Admin/order_history_view.php";
+$AdminOrderHistory_controller="../../../App/Controller/Admin/order_history.php";
+$AdminOrderHistory_service="../../../Service/Admin/order_history.php";
 
 
 ?>
