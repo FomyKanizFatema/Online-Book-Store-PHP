@@ -39,7 +39,7 @@
 				<tr id="row2" height="30px" width="100%">
 							<td>
 								<form><!--need make hover dropdoen later-->
-									<b><font color="ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbspCS</font></b><br/>
+									<b><font color="ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbspCS </font></b><br/>
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="dept">
 									<option value="">Select Course</option>
 									<option value="c">Course1</option>

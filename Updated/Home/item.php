@@ -11,7 +11,7 @@
 						<h4>Item Details :</h4><br/>
 					<img src="e.jpg" alt="Forest" width="200" height="250">
 				  </td>
-				 <td >
+				<td >
 					<br/><br/><br/><br/>
 					  <b ><!--align="center" style="<!--position: absolute;top:200px;left:400px; " --> Book Name : Demo</b><br/>
 					  <b  ><!--align="center" style="<!--position: absolute;top:220px;left:400px; "--> by <font size="4px" color="green"> Demo</font></b><br/>
@@ -23,7 +23,7 @@
 							   <b ><!--style="position: absolute;top:330px;left:400px; "--> <a  href="usercard.php"> Add to card  </a> </b><br/><br/>
 
 						<b ><!--style="position: absolute;top:370px;left:400px; "-->Related Cetagory : Demo<br/> </b><br/><br/>
-						</td></tr></table>
+				</td></tr></table>
 
 				</td>
 			</tr>
