@@ -1,4 +1,5 @@
 <?php
+
 include(realpath("../../../app/view/user/user_header_view.php"));
 ?>
 
@@ -18,7 +19,8 @@ include(realpath("../../../app/view/user/user_header_view.php"));
 		<table align="center" width="100%">
 			<tr>
 				<td>
-			<?php include("books_view.php");?>
+					<?php //echo dirname(__DIR__);
+					include(dirname(__DIR__).'/../Controller/shared/books.php');?>
 				</td>
 			</tr>
 		<table>

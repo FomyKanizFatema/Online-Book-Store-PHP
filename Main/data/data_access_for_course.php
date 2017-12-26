@@ -6,7 +6,7 @@
     $dbname="BookStore_DB";
     $port=3306;
    
-    function executeSQL($sql){
+    function executeSQLc($sql){
         global $host, $user, $pass, $dbname, $port;
         
         $link=mysqli_connect($host, $user, $pass, $dbname);

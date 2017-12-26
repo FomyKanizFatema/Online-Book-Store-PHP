@@ -1,12 +1,13 @@
-<?php include("userHeader.php");
+<?php
+echo dirname(__DIR__);
+include(realpath("../../../app/view/user/user_header_view.php"));
 
-$currentUser['name']="kaniz";
-$currentUser['email']="kaniz@gmail.com";
-$currentUser['dept']="CSSE";
-$currentUser['gender']="Female";
-$currentUser['dd']="07";
-$currentUser['mm']="Dec";
-$currentUser['yyyy']="1995";
+$currentUser['name']=$_SESSION['user']['NAME'];
+$currentUser['email']=$_SESSION['user']['EMAIL'];
+$currentUser['phone']=$_SESSION['user']['PHONE'];
+$currentUser['dept']=$_SESSION['user']['DEPARTMENT'];
+$mesage="";
+
 
 ?>
 
@@ -18,10 +19,11 @@ $currentUser['yyyy']="1995";
 					<?php include("sidebar_view.php");?>
 				</td>
 				<td>
+				<font color="red"><?php echo $message?></font>
 					<table cellpadding="25px" width="100%"><tr><td>
 					
 					
-								<form action="editHandler.php" width="100%">
+				<form action="editHandler.php" method="POST" width="100%">
 					<fieldset>
 						<legend>Edit Profile</legend>
 						<table align="center">
@@ -35,6 +37,11 @@ $currentUser['yyyy']="1995";
 						<td><b>Email </b></td>				
 						<td><b>: </b><input type="text" name="email" value="<?php echo $currentUser['email'];?>"></td>
 						</tr>
+						
+						<tr>
+						<td><b>Phone </b></td>				
+						<td><b>: </b><input type="text" name="phone" value="<?php echo $currentUser['phone'];?>"></td>
+						</tr>	
 
 						<tr>
 						<td><b>Department </b></td>				
@@ -43,49 +50,11 @@ $currentUser['yyyy']="1995";
 						
 						
 						
-						<tr>
-							<td colspan="2">
-							<fieldset>
-								<legend>Gender</legend>
-								<?php $m="male";$f="female";$o="other"?>
-								<input type="radio" name="gender" value="male" <?php if ($currentUser['gender'] == "Male"){ echo 'checked'; } ?>/>Male
-								<input type="radio" name="gender" value="female" <?php if ($currentUser['gender'] == "Female"){ echo 'checked'; } ?>/>Female
-								<input type="radio" name="gender" value="other" <?php if ($currentUser['gender'] == "Other"){ echo 'checked'; } ?>/>Other
-							</fieldset>
-							</td>
-						</tr>
 						
-						<tr >
-							<td colspan="2">
-							<fieldset>
-								<legend>Date of Birth</legend>
-								<table>
-						<tr>
-							<td>dd</td>
-							<td/>
-							<td>mm</td>
-							<td/>
-							<td>yyyy</td>
-						</tr>
-						<tr valign="top">
-							<td>
-								<!--<form action="handler.php">-->
-									<input type="dd" name="date" size='1'value="<?php echo $currentUser['dd'];?>">
-								<!--</form>-->
-							</td>
-							<td>/</td>
-							<td>
-								<!--<form action="handler.php">-->
-									<input type="text" name="month" size='1' value="<?php echo $currentUser['mm'];?>">
-								<!--</form>-->
-							</td>
-							<td>/</td>
-							<td>
-								<!--<form action="handler.php">-->
-									<input type="text" name="year"  size='1'value="<?php echo $currentUser['yyyy'];?>"/>
-								
-							</td>
-						</tr>
+						
+						
+						
+
 					</table>
 					</fieldset><br/>
 					<input type="submit" value="Edit" />

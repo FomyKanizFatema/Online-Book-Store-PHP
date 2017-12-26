@@ -1,8 +1,7 @@
 <?php
+echo dirname(__DIR__);
+include(dirname(__DIR__).'/../../service/book.php');
 
-include(dirname(__DIR__).'/../../links.php');
-header('dirname(__DIR__).$homeController');
-//include("links.php");
 ?>
 
 <html>
@@ -47,13 +46,8 @@ header('dirname(__DIR__).$homeController');
 				<tr id="row2" height="30px" width="100%">
 							<td>
 								<form><!--need make hover dropdoen later-->
-									<b><font color="ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbspCS</font></b><br/>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="dept">
-									<option value="">Select Course</option>
-									<option value="c">Course1</option>
-									<option value="EEE">Course2</option>
-									<option value="COE">Course3</option>															
-									</select>
+								<?phpinclude(dirname(__DIR__).'/dept_course_fetcher.php');?>
+									
 								</form>
 							</td>				
 							

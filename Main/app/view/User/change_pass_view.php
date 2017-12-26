@@ -1,4 +1,4 @@
-<?php include("userHeader.php");?>
+<?php include(realpath("../../../app/view/user/user_header_view.php"));?>
 
 <html>
 <body>
@@ -9,21 +9,21 @@
 				</td>
 				<td>
 					<table cellpadding="25px"><tr><td>
-						<form action="passHandler.php">
+			<form action="change_pass.php" method='POST'>
 			<fieldset>
 				<legend>CHANGE PASSWORD</legend>
 					<table>
 						<tr>
 						<td><b>Current Password  </b></td>				
-						<td><b>: </b><input type="text" name="old"/></td>
+						<td><b>: </b><input type="text" name="oldpass"/></td>
 						</tr>
 						<tr>
 						<td><b>New Password </b></td>	
-						<td><b>: </b><input type="text" name="new"/></td>
+						<td><b>: </b><input type="text" name="newpass"/></td>
 						</tr>
 						<tr>
 						<td><b>Retype New Password </b></td>	
-						<td><b>: </b><input type="text" name="rnew"/></td>
+						<td><b>: </b><input type="text" name="rnewpass"/></td>
 						</tr>
 						
 					</table>

@@ -1,42 +1,40 @@
-<?php include("userHeader.php");?>
+<?php 
+session_start();
+include(dirname(__DIR__).'/../view/User/change_pass_view.php');
+include(dirname(__DIR__).'/../../Service/person.php');
+$person= $_SESSION['user'];
+$fetchedUser=getUsersByEmail($person['EMAIL']);
+$_SESSION['user']=$fetchedUser[0];
+$person= $_SESSION['user'];
+echo $person['PASSWORD'];
 
-<html>
-<body>
-		<table border="0" width="100%">
-			<tr valign="top">
-				<td width="15%">
-					<?php include("sidebar_view.php");?>
-				</td>
-				<td>
-					<table cellpadding="25px"><tr><td>
-						<form action="passHandler.php">
-			<fieldset>
-				<legend>CHANGE PASSWORD</legend>
-					<table>
-						<tr>
-						<td><b>Current Password  </b></td>				
-						<td><b>: </b><input type="text" name="old"/></td>
-						</tr>
-						<tr>
-						<td><b>New Password </b></td>	
-						<td><b>: </b><input type="text" name="new"/></td>
-						</tr>
-						<tr>
-						<td><b>Retype New Password </b></td>	
-						<td><b>: </b><input type="text" name="rnew"/></td>
-						</tr>
-						
-					</table>
-					<hr>					
-					<br/>
-					<input type="submit" value="Submit">				
-					
-			</fieldset>
-		</form>
-						</td></tr></table>
 
-				</td>
-			</tr>
-		</table>
-	</body>
-</html>
+if($person['PASSWORD']==$_REQUEST['oldpass']){
+	if($_REQUEST['newpass']==$_REQUEST['rnewpass']){	
+		$person['PASSWORD']=$_REQUEST['newpass'];
+		$r=changeUserPass($person);
+		if($r){ echo "changed";
+		$fetchedUser=getUsersByEmail($person['EMAIL']);
+		$_SESSION['user']=$fetchedUser[0];
+		$message="Changed";
+		}
+	}
+	else{
+		?>
+		<script>
+		document.write("New Password & Confirmed Password didn't match");
+		</script>
+		<?php 
+
+	}
+}
+
+else{
+		?>
+		<script>
+		document.write("Wrong Old Password");
+		</script>
+		<?php 
+
+	}
+?>

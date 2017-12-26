@@ -10,14 +10,6 @@
     function editPerson($person){
         return editPersonToDb($person);
     }
-	
-	function editUser($person){
-        return editUserToDb($person);
-    }
-	
-	function changeUserPass($person){
-        return changeUserPassToDb($person);
-    }
     
     function removePerson($personId){
         return removePersonFromDb($personId);

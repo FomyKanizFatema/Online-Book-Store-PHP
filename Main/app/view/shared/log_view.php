@@ -1,6 +1,3 @@
-<?php
- 
-?>
 
 <head>
 		<title>Tienda De Floris</title>
@@ -15,7 +12,7 @@
 				<tr id="row1" >
 					<td  width="100%" height="40px" align="right">
                          					
-						<a href="Index.php" id="home"><img src="home2.png" width="45px" height="45px"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="../../../Index.php" id="home"><img src="home2.png" width="45px" height="45px"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<a href="log.php"id="log"><img src="loginn.png" width="45px" height="45px"/></a> &nbsp;&nbsp; &nbsp;&nbsp;
 						<a href="contact.php" id="contact"><img src="contactus.png"  height="43px" /></a> &nbsp;&nbsp;&nbsp;&nbsp;
 					</td>
@@ -65,17 +62,27 @@
 			<tr valign="top">
 			 <td>
 			 
-					<form action="../../../App/Controller/Home/login_controller.php">
+					<form action="../../../App/Controller/Shared/login.php" method="POST">
 							<fieldset>
 								<legend>LOGIN</legend>
 									<table >
 										<tr>
-										<td><b>User Name </b></td>				
-										<td><b>: </b><input type="text" name="uname"></td>
+										<td><b>Email </b></td>				
+										<td><b>: </b><input type="text" name="email"></td>
 										</tr>
 										<tr>
 										<td><b>Password <b></td>	
 										<td><b>: </b><input type="text" name="pass"></td>
+										</tr>
+										<tr>
+										
+										<td><b>Login As <b></td>
+										<td>
+										<input type="radio" name="role" value="customer">Customer
+										<input type="radio" name="role" value="admin">Admin
+										<input type="radio" name="role" value="employee">Employee
+										</td>	
+										
 										</tr>
 										
 									</table>
@@ -98,7 +105,7 @@
 
 									<tr>
 										<td>										
-											<form action="../../../App/Controller/Home/registration_controller.php" >
+											<form action="../../../App/Controller/Shared/registration.php" >
 										<fieldset>
 											<legend>Don't Have An Account? Register Here</legend>
 												<table>
@@ -114,9 +121,14 @@
 													</tr>
 													
 													<tr>
-													<td><b>User Name </b></td>				
-													<td><b>: </b><input type="text" name="uname"></td>
+													<td><b>Phone </b></td>				
+													<td><b>: </b><input type="text" name="phone"></td>
 													</tr>
+													
+													<tr>
+													<td><b>Department </b></td>				
+													<td><b>: </b><input type="text" name="dept"></td>
+													</tr>	
 													
 													<tr>
 													<td><b>Password <b></td>	

@@ -1,5 +1,6 @@
 <?php 
 
+//include(dirname(__DIR__).'/../Controller/shared/dept_course_fetcher.php');
 
 ?>
 
@@ -46,17 +47,14 @@
 			
 			<table width=70% align="center">
 				<tr id="row2" height="30px" width="100%">
+				
 							<td>
-								<form><!--need make hover dropdoen later-->
-									<b><font color="ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbspCS</font></b><br/>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="dept">
-									<option value="">Select Course</option>
-									<option value="c">Course1</option>
-									<option value="EEE">Course2</option>
-									<option value="COE">Course3</option>															
-									</select>
-								</form>
-							</td>				
+								<table width="100%"><tr/>
+									<?php include(dirname(__DIR__).'/../controller/shared/dept_course_fetcher.php');?>
+								</tr></table>
+							
+								
+							</td>									
 							
 				</tr>
 			</table>

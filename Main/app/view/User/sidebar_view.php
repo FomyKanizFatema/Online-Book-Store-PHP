@@ -1,5 +1,14 @@
 <?php
-include(realpath("../../../links.php"));
+//echo dirname(__DIR__);
+$Dashboard='dashboard.php';
+$Profile='profile.php';
+$OrderHistory='order_history.php';
+$Wishlist='wishlist.php';
+$EditProfile='edit_profile.php';
+$ChangePass='change_pass.php';
+$Feedback='feedback.php';
+$logOut='logout.php';
+$ChangePic='change_pic.php';
 ?>
 
 <table border="1" cellpadding="10px">
@@ -8,15 +17,15 @@ include(realpath("../../../links.php"));
 
 		<h3 align="center"><b>Account</b></h3><hr/>
 			<table border="1" cellpadding="10px">
-						<tr><td><a href="<?php echo $userDashboard_controller;?>">Dashboard</a></td></tr>
-						<tr><td><a href="<?php echo $userProfile_controller ;?>userProfile.php">Profile</a></td></tr>
-						<tr><td><a href="<?php echo $userOrderHistory_controller;?>userOrderHistory.php">Order History</a></td></tr>
-						<tr><td><a href="<?php echo $userWishlist_controller;?>userWishlist.php">Wishlist</a></td></tr>
-						<tr><td><a href="<?php echo $userEditProfile_controller;?>editUserProfile.php">Edit Profile</a></td></tr>
-						<tr><td><a href="<?php echo $userChangePic_controller;?>changeUserPic.php">Change Profile Picture</a></td></tr>
-						<tr><td><a href="<?php echo $userChangePass_controller;?>changePass.php">Change Password</a></td></tr>
-						<tr><td><a href="<?php echo $userFeedback_controller;?>userFeedBack.php">Feedback</a></td></tr>
-						<tr><td><a href="<?php echo $logOut;?>../Home/home.php">Log out</a></td>	</tr>											
+						<tr><td><a href="<?php echo $Dashboard;?>">Dashboard</a></td></tr>
+						<tr><td><a href="<?php echo $Profile ;?>">Profile</a></td></tr>
+						<tr><td><a href="<?php echo $OrderHistory;?>">Order History</a></td></tr>
+						<tr><td><a href="<?php echo $Wishlist;?>">Wishlist</a></td></tr>
+						<tr><td><a href="<?php echo $EditProfile;?>">Edit Profile</a></td></tr>
+						<tr><td><a href="<?php echo $ChangePic;?>">Change Profile Picture</a></td></tr>
+						<tr><td><a href="<?php echo $ChangePass;?>">Change Password</a></td></tr>
+						<tr><td><a href="<?php echo $Feedback;?>">Feedback</a></td></tr>
+						<tr><td><a href="<?php echo $logOut;?>">Log out</a></td>	</tr>											
 			</table>
 		</td>
 	</tr>

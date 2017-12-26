@@ -1,51 +1,25 @@
 <?php include(dirname(__DIR__).'/data/data_access.php'); ?>
 <?php
-    function addPersonToDb($person){
+    function addBooksToDb($person){
         $sql = "INSERT INTO person(id, name, email) VALUES(NULL, '$person[name]', '$person[email]')";
         $result = executeSQL($sql);
         return $result;
     }
 	
-	function addUserToDb($person){
-        $sql = "INSERT INTO user (NAME,EMAIL,PHONE,DEPARTMENT,GENDER,DOB,PASSWORD,STATUS) VALUES('$person[name]', '$person[email]','$person[phone]', '$person[dept]','$person[gender]', '$person[dob]','$person[pass]', '$person[status]')";
-        $result = executeSQL($sql);
-        return $result;
-    }
-	   
-    
-    function editPersonToDb($person){
-        $sql = "UPDATE person SET name='$person[name]', email='$person[email]' WHERE user_id=$person[id]";
-        $result = executeSQL($sql);
-        return $result;
-    }
 	
-	function changeUserPassToDb($person){
-		echo $person['PASSWORD'];
-		
-       $sql = "UPDATE user SET password='$person[PASSWORD]' WHERE user_id=$person[USER_ID]";
-        $result = executeSQL($sql);
-		if($result ){
-			echo "ok";
-		}
-		else{
-			echo "not ok";
-		}
-        return $result;
-    }
-	
-	function editUserToDb($person){
-        $sql = "UPDATE user SET name='$person[name]', email='$person[email]',phone='$person[phone]',department='$person[dept]' WHERE user_id=$person[id]";
+    function editBooksToDb($person){
+        $sql = "UPDATE person SET name='$person[name]', email='$person[email]' WHERE id=$person[id]";
         $result = executeSQL($sql);
         return $result;
     }
     
-    function removePersonFromDb($personId){
+    function removeBooksFromDb($personId){
         $sql = "DELETE FROM person WHERE id=$personId";        
         $result = executeSQL($sql);
         return $result;
     }
     
-    function getAllPersonsFromDb(){
+    function getAllBooksFromDb(){
         $sql = "SELECT * FROM person";        
         $result = executeSQL($sql);
         
@@ -57,7 +31,7 @@
         return $persons;
     }
     
-    function getPersonByIdFromDb($personId){
+    function getBooksyIdFromDb($personId){
         $sql = "SELECT * FROM person WHERE id=$personId";        
         $result = executeSQL($sql);
         
