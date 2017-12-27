@@ -1,13 +1,11 @@
-<?php
-include(realpath("../../../links.php"));
-?>
 
 <html>
 	<head>
-		
 	</head>
-	<body  align="center" width="80%">
-		<header>
+	<body>
+	
+	
+	<header>
 			<table width="100%" align="center" border="0">
 			
 				<tr id="row1" >
@@ -22,12 +20,12 @@ include(realpath("../../../links.php"));
 			
 			<table border="0" width="100%">
 				
-				<tr valign="center">
+				<tr>
 					<td width="25%" align="center"><img src="logo.jpg" height="150px" width="120"</td>
 					<td width="50%" align="center">
 						<form>
 							<input type="text" height="31" placeholder=" Search By Book/Author/Course" size="35" id="searchBox"/>
-							<a href="../../../App/Controller/Shared/search_controller.php"><img src="searchIcon.png" id="searchIcon"/></a>
+							<a href="../../../App/Controller/Home/search_controller.php"><img src="searchIcon.png" id="searchIcon"/></a>
 							
 						</form>
 					</td>
@@ -51,18 +49,34 @@ include(realpath("../../../links.php"));
 			<table width=70% align="center">
 				<tr id="row2" height="30px" width="100%">
 							<td>
-								<table width="100%"><tr/>
-									<?php include(dirname(__DIR__).'/../controller/shared/dept_course_fetcher.php');?>
-								</tr></table>
-							
-								
+								<form><!--need make hover dropdoen later-->
+									<b><font color="ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbspCS</font></b><br/>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="dept">
+									<option value="">Select Course</option>
+									<option value="c">Course1</option>
+									<option value="EEE">Course2</option>
+									<option value="COE">Course3</option>															
+									</select>
+								</form>
 							</td>				
 							
 				</tr>
 			</table>
 		</header>
-		<br/> <br/>
+	
+		<table align="center">
+			<tr>
+				<th colspan="2">Contact Us</th>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td>: abc@gmail.com</td>
+			</tr>
+		</table>
 	</body>
+	
+	
+	
 	
 	<script type="text/javascript">
 	document.getElementById("cartD").style.marginTop = "20px";
@@ -76,8 +90,8 @@ include(realpath("../../../links.php"));
 			document.getElementById("row1").style.backgroundColor = "4889F3";
 			document.getElementById("row2").style.backgroundColor = "4889F3";
 			document.getElementById("searchButton").style.backgroundColor = "ffffff";
-			
-			
+			document.getElementById("wishlist").style.backgroundColor = "ffffff";
+			document.getElementById("cart").style.backgroundColor = "ffffff";
 			document.getElementById("log").style.marginTop = "30px";
 			
 			document.getElementById("log").style.textDecorationColor = "red";

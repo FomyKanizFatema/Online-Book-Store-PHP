@@ -15,14 +15,13 @@
 					</td>
 				 <td >
 					<br/><br/><br/><br/>
-					<b >Book Name : Demo</b><br/>
+					<b >Book Name : <?php echo $item['name'];?></b><br/>
 					<b  >by <font size="4px" color="green"> Demo</font></b><br/>
 					<b >-----------------------------</b><br/>
 					<b >Edition : Demo </b><br/>
 					<b >Publisher: Demo<br/> </b>
 					<b >Cagagory : Demo<br/> </b><br/>
-					<b ><a  href="usercard.php"> Add to card  </a> </b><br/><br/>
-					<b >Related Cetagory : Demo<br/> </b><br/><br/>
+					<form><button>Place Order</button></form>
 					</td></tr></table>
 
 				</td>

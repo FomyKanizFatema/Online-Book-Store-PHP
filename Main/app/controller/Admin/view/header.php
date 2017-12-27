@@ -26,7 +26,7 @@ include(realpath("../../../links.php"));
 					<td width="25%" align="center"><img src="logo.jpg" height="150px" width="120"</td>
 					<td width="50%" align="center">
 						<form>
-							<input type="text" height="31" placeholder=" Search By Book/Author/Course" size="35" id="searchBox"/>
+							<input type="text" height="31"  size="35" id="searchBox"/>
 							<a href="../../../App/Controller/Shared/search_controller.php"><img src="searchIcon.png" id="searchIcon"/></a>
 							
 						</form>
@@ -42,24 +42,12 @@ include(realpath("../../../links.php"));
 						
 					</td>
 					<td>
-					<form action="../../../App/Controller/User/profile.php"><button><font color="blue">Welcome <br/><?php echo $_SESSION['user']['NAME'];?> </font></button></form>
+					<form action="../../../App/Controller/User/profile.php"><button><font color="blue">Welcome <br/><?php echo $_SESSION['user']['name'];?> </font></button></form>
 					</td>
 				</tr>
 				
-			</table>
+			</table>			
 			
-			<table width=70% align="center">
-				<tr id="row2" height="30px" width="100%">
-							<td>
-								<table width="100%"><tr/>
-									<?php include(dirname(__DIR__).'/../controller/shared/dept_course_fetcher.php');?>
-								</tr></table>
-							
-								
-							</td>				
-							
-				</tr>
-			</table>
 		</header>
 		<br/> <br/>
 	</body>

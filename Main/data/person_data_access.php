@@ -6,6 +6,11 @@
         return $result;
     }
 	
+	function addEmployeeToDb($person){
+        $sql = "INSERT INTO employee (id, name, email) VALUES(NULL, '$person[name]', '$person[email]')";
+        $result = executeSQL($sql);
+        return $result;
+    }
 	function addUserToDb($person){
         $sql = "INSERT INTO user (NAME,EMAIL,PHONE,DEPARTMENT,GENDER,DOB,PASSWORD,STATUS) VALUES('$person[name]', '$person[email]','$person[phone]', '$person[dept]','$person[gender]', '$person[dob]','$person[pass]', '$person[status]')";
         $result = executeSQL($sql);
@@ -33,8 +38,28 @@
         return $result;
     }
 	
+	function changeEmployeePassToDb($pass,$id){
+		echo $person['PASSWORD'];
+		
+       $sql = "UPDATE employee SET password='$pass' WHERE id=$id";
+        $result = executeSQL($sql);
+		if($result ){
+			echo "ok";
+		}
+		else{
+			echo "not ok";
+		}
+        return $result;
+    }
+	
 	function editUserToDb($person){
         $sql = "UPDATE user SET name='$person[name]', email='$person[email]',phone='$person[phone]',department='$person[dept]' WHERE user_id=$person[id]";
+        $result = executeSQL($sql);
+        return $result;
+    }
+	
+	function editEmployeeToDb($name,$email,$phone){
+        $sql = "UPDATE employee SET name='$name', email='$email',phone='$phone'";
         $result = executeSQL($sql);
         return $result;
     }
@@ -90,6 +115,19 @@
         return $persons;
     }
 	
+	
+	function getEmployeeByEmailFromDb($personEmail){
+		
+        $sql = "SELECT * FROM employee WHERE email LIKE '%$personEmail%'";
+        $result = executeSQL($sql);
+        
+        $persons = array();
+        for($i=0; $row = mysqli_fetch_assoc($result); ++$i){
+            $persons[$i] = $row;
+        }
+        
+        return $persons;
+    }
 	function getUsersByEmailFromDb($personEmail){
 		
         $sql = "SELECT * FROM user WHERE email LIKE '%$personEmail%'";
@@ -103,18 +141,7 @@
         return $persons;
     }
     
-	function getEmployeeByEmailFromDb($personEmail){
-		
-        $sql = "SELECT * FROM enployee WHERE email LIKE '%$personEmail%'";
-        $result = executeSQL($sql);
-        
-        $persons = array();
-        for($i=0; $row = mysqli_fetch_assoc($result); ++$i){
-            $persons[$i] = $row;
-        }
-        
-        return $persons;
-    }
+	
     
 	
     function getPersonsByNameOrEmailFromDb($key){

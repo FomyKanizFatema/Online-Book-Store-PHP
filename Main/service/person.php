@@ -3,6 +3,9 @@
     function addPerson($person){
         return addPersonToDb($person);
     }
+	function addEmployee($person){
+        return addEmployeeToDb($person);
+    }
 	function addUser($person){
         return addUserToDb($person);
     }
@@ -14,10 +17,17 @@
 	function editUser($person){
         return editUserToDb($person);
     }
+	function editEmployee($name,$email,$phone){
+        return editEmployeeToDb($name,$email,$phone);
+    }
 	
 	function changeUserPass($person){
         return changeUserPassToDb($person);
     }
+	function changeEmployeePass($pass,$id){
+        return changeEmployeePassToDb($pass,$id);
+    }
+	
     
     function removePerson($personId){
         return removePersonFromDb($personId);
@@ -45,6 +55,7 @@
 	function getEmployeeByEmail($personEmail){
         return getEmployeeByEmailFromDb($personEmail);
     }
+	
     
     function getPersonsByNameOrEmail($key){
         return getPersonsByNameOrEmailFromDb($key);

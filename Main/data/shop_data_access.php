@@ -1,106 +1,136 @@
 <?php include(dirname(__DIR__).'/data/data_access.php'); ?>
 <?php
-    function addBooksToDb($person){
-        $sql = "INSERT INTO person(id, name, email) VALUES(NULL, '$person[name]', '$person[email]')";
-        $result = executeSQL($sql);
+    function addBookToWishlistDb($bookname,$bookprice,$userid){
+		//echo $user['USER_ID'].$book['NAME'];
+       $sql = "INSERT INTO wishlist(name,price,user_Id) VALUES('$bookname','$bookprice','$userid')";
+        $result = executeSQLs($sql);
+        return $result;
+    }
+	
+	function addBookToCartDb($bookname,$bookprice,$userid){
+		//echo $user['USER_ID'].$book['NAME'];
+       $sql = "INSERT INTO cart(name,price,user_Id) VALUES('$bookname','$bookprice','$userid')";
+        $result = executeSQLs($sql);
         return $result;
     }
 	
 	
-    function editBooksToDb($person){
-        $sql = "UPDATE person SET name='$person[name]', email='$person[email]' WHERE id=$person[id]";
-        $result = executeSQL($sql);
+    function editBookToDb($book){
+        $sql = "UPDATE book SET name='$book[name]', author='$book[author]', course_id='$book[courseId]', copies='$book[copies]',buying price='$book[bp]', selling price'$book[sp]' WHERE id=$book[id]";
+        $result = executeSQLs($sql);
         return $result;
     }
     
-    function removeBooksFromDb($personId){
-        $sql = "DELETE FROM person WHERE id=$personId";        
-        $result = executeSQL($sql);
+    function removeBookFromDb($bookId){
+        $sql = "DELETE FROM book WHERE id=$bookId";        
+        $result = executeSQLs($sql);
         return $result;
     }
     
     function getAllBooksFromDb(){
-        $sql = "SELECT * FROM person";        
-        $result = executeSQL($sql);
+        $sql = "SELECT * FROM book";        
+        $result = executeSQLs($sql);
         
-        $persons = array();
+        $book = array();
         for($i=0; $row=mysqli_fetch_assoc($result); ++$i){
-            $persons[$i] = $row;
+            $book[$i] = $row;
         }
         
-        return $persons;
+        return $book;
     }
+	
+	function getAllCartItemsFromDb($userid){
+        $sql = "SELECT * FROM cart,book where user_id='$userid' ";        
+        $result = executeSQLs($sql);
+        
+        $book = array();
+		$item = array();
+        for($i=0; $row=mysqli_fetch_assoc($result); ++$i){
+            $book[$i] = $row;
+			$b=$book[$i]['name'];
+			 $sql = "SELECT * FROM book where NAME='$b' ";        
+             $result = executeSQLs($sql);
+			 for($i=0; $row=mysqli_fetch_assoc($result); ++$i){
+             $item[$i] = $row;
+			
+         }
+        }
+        
+        return $item;
+    }
+	
+	
+	
+	function getAllwishedItemsFromDb($userid){
+        $sql = "SELECT * FROM wishlist where user_id='$userid' ";        
+        $result = executeSQLs($sql);
+        
+        $book = array();
+		$item = array();
+        for($i=0; $row=mysqli_fetch_assoc($result); ++$i){
+            $book[$i] = $row;
+			$b=$book[$i]['name'];
+			 $sql = "SELECT * FROM book where NAME='$b' ";        
+             $result = executeSQLs($sql);
+			 for($i=0; $row=mysqli_fetch_assoc($result); ++$i){
+             $item[$i] = $row;
+			
+         }
+        }
+        
+        return $item;
+    }
+	
+	
+	
     
-    function getBooksyIdFromDb($personId){
-        $sql = "SELECT * FROM person WHERE id=$personId";        
-        $result = executeSQL($sql);
+    function getBookByIdFromDb($bookId){
+        $sql = "SELECT * FROM book WHERE id=$bookId";        
+        $result = executeSQLs($sql);
         
-        $person = mysqli_fetch_assoc($result);
+        $book = mysqli_fetch_assoc($result);
         
-        return $person;
+        return $book;
     }    
 
-    function getPersonsByNameFromDb($personName){
-        $sql = "SELECT * FROM person WHERE name LIKE '%$personName%'";
-        $result = executeSQL($sql);
+    function getBookByNameFromDb($bookName){
+        $sql = "SELECT * FROM book WHERE name LIKE '%$bookName%'";
+        $result = executeSQLs($sql);
         
-        $persons = array();
+         $book = array();
         for($i=0; $row = mysqli_fetch_assoc($result); ++$i){
-            $persons[$i] = $row;
+            $book[$i] = $row;
         }
         
-        return $persons;
+        return $book;
     }
     
-    function getPersonsByEmailFromDb($personEmail){
-        $sql = "SELECT * FROM person WHERE email LIKE '%$personEmail%'";
-        $result = executeSQL($sql);
-        
-        $persons = array();
-        for($i=0; $row = mysqli_fetch_assoc($result); ++$i){
-            $persons[$i] = $row;
-        }
-        
-        return $persons;
-    }
+   
 	
-	function getUsersByEmailFromDb($personEmail){
+	function getBookByAuthorFromDb($author){
 		
-        $sql = "SELECT * FROM user WHERE email LIKE '%$personEmail%'";
-        $result = executeSQL($sql);
+        $sql = "SELECT * FROM book WHERE author LIKE '%$bookauthor%'";
+        $result = executeSQLs($sql);
         
-        $persons = array();
+        $book = array();
         for($i=0; $row = mysqli_fetch_assoc($result); ++$i){
-            $persons[$i] = $row;
+            $book[$i] = $row;
         }
         
-        return $persons;
-    }
-    
-	function getEmployeeByEmailFromDb($personEmail){
-		
-        $sql = "SELECT * FROM enployee WHERE email LIKE '%$personEmail%'";
-        $result = executeSQL($sql);
-        
-        $persons = array();
-        for($i=0; $row = mysqli_fetch_assoc($result); ++$i){
-            $persons[$i] = $row;
-        }
-        
-        return $persons;
+        return $book;
     }
     
 	
-    function getPersonsByNameOrEmailFromDb($key){
-        $sql = "SELECT * FROM person WHERE name LIKE '%$key%' OR email LIKE '%$key%'";
-        $result = executeSQL($sql);
+    function getBookByNameOrAuthorFromDb($key){
+        $sql = "SELECT * FROM book WHERE name LIKE '%$key%' OR author LIKE '%$key%'";
+        $result = executeSQLs($sql);
         
-        $persons = array();
+         $book = array();
         for($i=0; $row = mysqli_fetch_assoc($result); ++$i){
-            $persons[$i] = $row;
+            $book[$i] = $row;
         }
         
-        return $persons;
+        return $book;
     }
     
 ?>

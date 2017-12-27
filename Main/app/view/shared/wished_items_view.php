@@ -1,21 +1,19 @@
-<?php
-include(realpath("../../../links.php"));
-?>
+
 
 <html>
 	<head>
-		
+		<title>Tienda De Floris</title>
 	</head>
-	<body  align="center" width="80%">
-		<header>
+	<body>
+	<header>
 			<table width="100%" align="center" border="0">
 			
 				<tr id="row1" >
 					<td  width="100%" height="40px" align="right">
                          					
-						<a href="home.php" id="home"><img src="home2.png" width="45px" height="45px"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="../user/home.php" id="home"><img src="home2.png" width="45px" height="45px"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<a href="logout.php"id="log"><img src="logout.png" width="45px" height="45px"/></a> &nbsp;&nbsp; &nbsp;&nbsp;
-						<a href="contact.php" id="contact"><img src="contactus.png"  height="43px" /></a> &nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="../user/contact.php" id="contact"><img src="contactus.png"  height="43px" /></a> &nbsp;&nbsp;&nbsp;&nbsp;
 					</td>
 				</tr>
 			</table>
@@ -61,7 +59,26 @@ include(realpath("../../../links.php"));
 				</tr>
 			</table>
 		</header>
-		<br/> <br/>
+	
+		
+		<table border="0" width="100%">
+			<tr valign="top">
+				<td width="15%">
+					<?php include("sidebar_view.php");?>
+				</td>
+				<td>
+		<table align="center" width="100%">
+			<tr>
+				<td> <h2 align="center">Wishlist</h2>
+					<?php //echo dirname(__DIR__);
+					foreach ($fetchedItems as $item){
+		     include(dirname(__DIR__).'/../View/shared/wishlist_DView.php');
+		
+	}?>
+				</td>
+			</tr>
+		<table>
+			
 	</body>
 	
 	<script type="text/javascript">
@@ -107,3 +124,4 @@ include(realpath("../../../links.php"));
 			
 	</script>
 </html>
+
