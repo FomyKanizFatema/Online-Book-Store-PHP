@@ -107,39 +107,74 @@
 											<legend>Don't Have An Account? Register Here</legend>
 											 <h3 align="center"><font color="red" ><?php if(isset($_REQUEST['m'])){
 					if($_REQUEST['m']==1){
-				echo "Registration Successful! !";}
+				echo "Field can not be empty";}
 				}?></font></h3>
 				<br/>
 												<table>
 													<tr>
 													<td><b>Name </b></td>				
 													<td><b>: </b><input type="text" name="name"></td>
-													
+													<?php
+															if(isset($_GET['errors3']))
+														{
+															echo '<font  color="red"<b>Name at lest 3 character</b></font>';
+														}
+													?>
 													</tr>
 													
 													<tr>
 													<td><b>Email </b></td>				
 													<td><b>: </b><input type="text" name="email"></td>
+													<?php
+															if(isset($_GET['errors1']))
+														{
+															echo '<font  color="red"<b>Invalid Email</b></font>';
+														}
+													?>
 													</tr>
 													
 													<tr>
 													<td><b>Phone </b></td>				
 													<td><b>: </b><input type="text" name="phone"></td>
+													<?php
+															if(isset($_GET['errors6']))
+														{
+															echo '<font  color="red"<b>Invalid Phone Number</b></font>';
+														}
+													?>
 													</tr>
 													
 													<tr>
 													<td><b>Department </b></td>				
 													<td><b>: </b><input type="text" name="dept"></td>
+													<?php
+															if(isset($_GET['errors4']))
+														{
+															echo '<font  color="red"<b>Invalid Department</b></font>';
+														}
+													?>
 													</tr>	
 													
 													<tr>
 													<td><b>Password <b></td>	
 													<td><b>: </b><input type="text" name="pass"></td>
+													<?php
+															if(isset($_GET['errors5']))
+														{
+															echo '<font  color="red"<b>Invalid Password</b></font>';
+														}
+													?>
 													</tr>
 													
 													<tr>
 													<td><b>Confirm Password <b></td>	
 													<td><b>: </b><input type="text" name="cpass"></td>
+													<?php
+															if(isset($_GET['errors2']))
+														{
+															echo '<font  color="red"<b>Invalid Password</b></font>';
+														}
+													?>
 													</tr>	
 													<tr>
 														<td colspan="2">
@@ -150,8 +185,20 @@
 															<input type="radio" name="gender" value="other"/>Other
 														</fieldset>
 														</td>
+														<?php
+															if(isset($_GET['errors7']))
+														{
+															echo '<font  color="red"<b>Select Gender</b></font>';
+														}
+													?>
 													</tr>
-													
+													<?php
+															if(isset($_GET['error0']))
+														{
+															echo '<font size="4px" color="green"<b>Registration Successful		</b></font>';
+														}
+													?>
+
 													
 												</table>
 															
