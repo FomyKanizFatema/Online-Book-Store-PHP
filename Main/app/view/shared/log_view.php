@@ -12,9 +12,8 @@
 				<tr id="row1" >
 					<td  width="100%" height="40px" align="right">
                          					
-						<a href="log.php" id="home"><img src="home2.png" width="45px" height="45px"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<a href="log.php"id="log"><img src="loginn.png" width="45px" height="45px"/></a> &nbsp;&nbsp; &nbsp;&nbsp;
-						<a href="contact.php" id="contact"><img src="contactus.png"  height="43px" /></a> &nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="index.php" id="home"><img src="home2.png" width="45px" height="45px"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;						
+						<a href="app/controller/shared/contact.php" id="contact"><img src="contactus.png"  height="43px" /></a> &nbsp;&nbsp;&nbsp;&nbsp;
 					</td>
 				</tr>
 			</table>
