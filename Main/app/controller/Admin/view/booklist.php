@@ -1,5 +1,5 @@
 <?php
-session_start();
+//session_start();
 include(realpath("view/header.php"));
 include(dirname(__DIR__).'/../../../Service/book.php');
 ?>
@@ -14,7 +14,7 @@ include(dirname(__DIR__).'/../../../Service/book.php');
 		<table border="0" width="100%">
 			<tr valign="top">
 				<td width="20%">
-					<?php include("sidebar_view.php");?>
+					<?php include("sidebar.php");?>
 					
 				</td>
 				<td>
@@ -37,7 +37,11 @@ include(dirname(__DIR__).'/../../../Service/book.php');
 						<th>ID</th>
 						<th>Name</th>
 						<th>Author</th>						
-						<th>Price</th>						
+						<th>Buying Price</th>	
+						<th>Selling Price</th>
+						<th>Profit</th>
+						
+						
 						<th>Action</th>				
 						 
 						</tr>
@@ -48,7 +52,9 @@ include(dirname(__DIR__).'/../../../Service/book.php');
 						<td><?php echo $book['BOOK_ID'];?></td>
 						<td><?php echo $book['NAME'];?></td>
 						<td><?php echo $book['AUTHOR'];?></td>						
-						<td><?php echo $book['PRICE']." "."Taka";?></td>						
+						<td><?php echo $book['BUYING PRICE']." "."Taka";?></td>	
+						<td><?php echo $book['SELLING PRICE']." "."Taka";?></td>						
+						
 						<td><a href="updateB.php?m=<?php echo $book['BOOK_ID'];?>">Update</a>|<a href="removeB.php?m=<?php echo $book['BOOK_ID'];?>">Remove</a></th>	
 						</tr>
 						<?php } ?>
