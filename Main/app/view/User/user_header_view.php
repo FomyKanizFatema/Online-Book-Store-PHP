@@ -25,9 +25,9 @@ include(realpath("../../../links.php"));
 				<tr valign="center">
 					<td width="25%" align="center"><img src="logo.jpg" height="150px" width="120"</td>
 					<td width="50%" align="center">
-						<form>
-							<input type="text" height="31" placeholder=" Search By Book/Author/Course" size="35" id="searchBox"/>
-							<a href="../../../App/Controller/Shared/search_controller.php"><img src="searchIcon.png" id="searchIcon"/></a>
+						<form action=""> <!--../../../App/Controller/User/searchForAll.php-->
+							<input type="text" height="31" name="string"placeholder=" Search By Book/Author/Course" size="35" id="searchBox"/>
+							<button>Search Books</button>
 							
 						</form>
 					</td>
@@ -69,10 +69,10 @@ include(realpath("../../../links.php"));
 	document.getElementById("wishD").style.backgroundColor = "ffffff";
 			document.getElementById("cartD").style.backgroundColor = "ffffff";
 			document.getElementById('searchBox').style.height="36px";
-			document.getElementById('searchIcon').style.height="41px";
-			document.getElementById('searchIcon').style.width="45px";
+			//document.getElementById('searchIcon').style.height="41px";
+			//document.getElementById('searchIcon').style.width="45px";
 			document.getElementById('searchBox').style.fontSize="17px";
-			document.getElementById("searchIcon").style.marginBottom = "-16px"
+			//document.getElementById("searchIcon").style.marginBottom = "-16px"
 			document.getElementById("row1").style.backgroundColor = "4889F3";
 			document.getElementById("row2").style.backgroundColor = "4889F3";
 			document.getElementById("searchButton").style.backgroundColor = "ffffff";

@@ -14,7 +14,7 @@ include(dirname(__DIR__).'/../../../Service/book.php');
 		<table border="0" width="100%">
 			<tr valign="top">
 				<td width="20%">
-					<?php include("sidebar.php");?>
+					<?php include("sidebar_view.php");?>
 					
 				</td>
 				<td>
@@ -36,10 +36,8 @@ include(dirname(__DIR__).'/../../../Service/book.php');
 						<tr>
 						<th>ID</th>
 						<th>Name</th>
-						<th>Author</th>
-						<th>Buying Price</th>
-						<th>Selling Price</th>
-						<th>Profit</th>
+						<th>Author</th>						
+						<th>Price</th>						
 						<th>Action</th>				
 						 
 						</tr>
@@ -49,10 +47,8 @@ include(dirname(__DIR__).'/../../../Service/book.php');
 						<tr align="center">
 						<td><?php echo $book['BOOK_ID'];?></td>
 						<td><?php echo $book['NAME'];?></td>
-						<td><?php echo $book['AUTHOR'];?></td>
-						<td><?php echo $book['BUYING PRICE']." "."Taka";?></td>
-						<td><?php echo $book['SELLING PRICE']." "."Taka";?></td>
-						<td><?php echo $book['SELLING PRICE']-$book['BUYING PRICE'];echo " "."Taka";?></td>
+						<td><?php echo $book['AUTHOR'];?></td>						
+						<td><?php echo $book['PRICE']." "."Taka";?></td>						
 						<td><a href="updateB.php?m=<?php echo $book['BOOK_ID'];?>">Update</a>|<a href="removeB.php?m=<?php echo $book['BOOK_ID'];?>">Remove</a></th>	
 						</tr>
 						<?php } ?>
