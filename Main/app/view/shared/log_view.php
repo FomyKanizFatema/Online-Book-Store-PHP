@@ -65,7 +65,7 @@
 									<table >
 										<tr>
 										<td><b>Email </b></td>				
-										<td><b>: </b><input type="text" name="email"></td>
+										<td><b>: </b><input type="email" name="email"></td>
 										</tr>
 										<tr>
 										<td><b>Password <b></td>	
@@ -119,7 +119,7 @@
 													
 													<tr>
 													<td><b>Email </b></td>				
-													<td><b>: </b><input type="text" name="email"></td>
+													<td><b>: </b><input type="email" name="email"></td>
 													</tr>
 													
 													<tr>
