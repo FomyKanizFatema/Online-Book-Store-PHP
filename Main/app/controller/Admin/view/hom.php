@@ -37,7 +37,7 @@ include(realpath("view/header.php"));
 	</body>
 	
 	<script type="text/javascript">
-			document.getElementById("side").style.backgroundColor = "4889F3";
+			//document.getElementById("side").style.backgroundColor = "4889F3";
 			document.getElementById("wishlist1").style.backgroundColor = "ffffff";
 			document.getElementById("cart1").style.backgroundColor = "ffffff";
 			
