@@ -8,7 +8,7 @@
 	
 	
     function editBookToDb($book){
-        $sql = "UPDATE book SET name='$book[name]', author='$book[author]', course_id='$book[courseId]', copies='$book[copies]',buying price='$book[bp]', selling price'$book[sp]' WHERE id=$book[id]";
+        $sql = "UPDATE book SET name='$book[name]', author='$book[author]', course_id='$book[courseId]',buying price='$book[bp]', selling price'$book[sp]' WHERE id=$book[id]";
         $result = executeSQL($sql);
         return $result;
     }

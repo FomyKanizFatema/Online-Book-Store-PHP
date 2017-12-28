@@ -53,7 +53,7 @@ include(dirname(__DIR__).'/../../../Service/book.php');
 						<td><?php echo $book['BUYING PRICE']." "."Taka";?></td>
 						<td><?php echo $book['SELLING PRICE']." "."Taka";?></td>
 						<td><?php echo $book['SELLING PRICE']-$book['BUYING PRICE'];echo " "."Taka";?></td>
-						<td><a href="update.php?m=<?php echo $book['BOOK_ID'];?>">Update</a>|<a href="remove.php?m=<?php echo $book['BOOK_ID'];?>">Remove</a></th>	
+						<td><a href="updateB.php?m=<?php echo $book['BOOK_ID'];?>">Update</a>|<a href="removeB.php?m=<?php echo $book['BOOK_ID'];?>">Remove</a></th>	
 						</tr>
 						<?php } ?>
 					  </table>
