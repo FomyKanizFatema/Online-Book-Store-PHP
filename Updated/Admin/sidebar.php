@@ -17,7 +17,6 @@ $userlist="userlist.php";
 $addUser="addUser.php";
 $removeUser="removeUser.php";
 $updateUser="updateUser.php";
-
 $booklist="booklist.php";
 $addBook="addBook.php";
 $removeBook="removeBook.php";
@@ -35,7 +34,7 @@ $updateBook="updateBook.php";
 											<tr><td><a href="<?php echo $EditProfile;?>">Edit Profile</a></td></tr>
 											<!--<tr><td><a href="<?php echo $ChangePic;?>">Change Profile Picture</a></td></tr>-->
 											<tr><td><a href="<?php echo $ChangePass;?>">Change Password</a></td></tr>											
-											<tr><td><a href="logout.php">Log out</a></td>	</tr>										
+											<tr><td><a href="<?php echo $logout ;?>">Log out</a></td>	</tr>										
 								</table>
 							</td>
 						</tr>
@@ -45,8 +44,8 @@ $updateBook="updateBook.php";
 				
 							<h3 align="center"><b>Orders</b></h3><hr/>
 								<table border="1" cellpadding="10px"width="100%">
-											<!--tr><td><a href="<?php echo $pOrder;?>">Pending Orders</a></td></tr>
-											<tr><td><a href="<?php echo $mOrder;?>">Month's History</a></td></tr-->
+											<tr><td><a href="<?php echo $pOrder;?>">Pending Orders</a></td></tr>
+											<tr><td><a href="<?php echo $mOrder;?>">Month's History</a></td></tr>
 											<tr><td><a href="<?php echo $allOrder;?>">All Orders</a></td></tr>
 																				
 								</table>

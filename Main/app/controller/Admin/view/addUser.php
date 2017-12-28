@@ -78,12 +78,13 @@ include(realpath("view/header.php"));
 												</table>
 												<hr>					
 												<br/>
-												<input type="submit" value="Submit">									
+												<input type="submit" value="Submit">	
+												<input type="submit" value="Reset">
 												
 												
 										</fieldset>
 									</form>
-									 <form action="addUser.php?"><input type="submit" value="Reset"></form>
+									 <!--form action="addUser.php?"><input type="submit" value="Reset"></form-->
 				</td>
 				</td>
 			</tr>
