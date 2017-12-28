@@ -71,7 +71,7 @@ $updateBook="updateBook.php";
 							<h3 align="center"><b>Books</b></h3><hr/>
 								<table border="1" cellpadding="10px" width="100%">
 											<tr><td><a href="<?php echo $booklist;?>">Booklist</a></td></tr>
-											<tr><td><a href="<?php echo $addbook;?>">Add New Book</a></td></tr>
+											<tr><td><a href="addbook.php">Add New Book</a></td></tr>
 											<tr><td><a href="<?php echo $removebook;?>">Remove Book</a></td></tr>
 											<tr><td><a href="<?php echo $updatebook;?>">Update Book</a></td></tr>	
 																				
