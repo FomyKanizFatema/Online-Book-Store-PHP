@@ -83,7 +83,6 @@ include(realpath("view/header.php"));
 												
 												
 										</fieldset>
-										<input type="submit" value="Reset">
 									</form>
 									 <!--form action="addUser.php?"><input type="submit" value="Reset"></form-->
 				</td>
