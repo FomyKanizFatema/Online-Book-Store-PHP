@@ -5,7 +5,7 @@
 		<table border="0" width="100%">
 			<tr valign="top">
 				<td width="15%">
-					<?php include("sidebar.php");?>
+					<?php include("sidebar_view.php");?>
 				</td>
 				<td>
 					<table cellpadding="25px"><tr><td>
