@@ -1,11 +1,11 @@
-<?php include("userHeader.php");?>
+<?php include("user_Header_view.php");?>
 
 <html>
 <body>
 		<table border="0" width="100%">
 			<tr valign="top">
 				<td width="15%">
-					<?php include("sidebar_view.php");?>
+					<?php include("sidebar.php");?>
 				</td>
 				<td>
 					<table cellpadding="25px"><tr><td>
