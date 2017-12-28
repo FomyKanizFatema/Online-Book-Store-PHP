@@ -9,7 +9,6 @@ $person['gender']=$_REQUEST['gender'];
 $person['pass']=$_REQUEST['pass'];
 $person['phone']=$_REQUEST['phone'];
 $person['status']="Active";
-
 echo addUser($person);
 
 ?>

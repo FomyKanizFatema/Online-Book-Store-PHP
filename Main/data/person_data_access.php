@@ -12,7 +12,7 @@
         return $result;
     }
 	function addUserToDb($person){
-        $sql = "INSERT INTO user (NAME,EMAIL,PHONE,DEPARTMENT,GENDER,DOB,PASSWORD,STATUS) VALUES('$person[name]', '$person[email]','$person[phone]', '$person[dept]','$person[gender]', '$person[dob]','$person[pass]', '$person[status]')";
+        $sql = "INSERT INTO user (NAME,EMAIL,PHONE,DEPARTMENT,GENDER,PASSWORD,STATUS) VALUES('$person[name]', '$person[email]','$person[phone]', '$person[dept]','$person[gender]', '$person[pass]', '$person[status]')";
         $result = executeSQL($sql);
         return $result;
     }
@@ -57,6 +57,13 @@
         $result = executeSQL($sql);
         return $result;
     }
+	//editUserByAdminToDb($name,$email,$phone,$dept);
+	function editUserByAdminToDb($name,$email,$phone,$dept,$id){
+		//echo $phone
+        $sql = "UPDATE user SET name='$name', email='$email',phone='$phone',department='$dept' WHERE user_id=$id";
+        $result = executeSQL($sql);
+        return $result;
+    }
 	
 	function editEmployeeToDb($name,$email,$phone){
         $sql = "UPDATE employee SET name='$name', email='$email',phone='$phone'";
@@ -66,6 +73,11 @@
     
     function removePersonFromDb($personId){
         $sql = "DELETE FROM person WHERE id=$personId";        
+        $result = executeSQL($sql);
+        return $result;
+    }
+	function removeUserFromDb($personId){
+        $sql = "DELETE FROM user WHERE USER_ID=$personId";        
         $result = executeSQL($sql);
         return $result;
     }
@@ -81,9 +93,42 @@
         
         return $persons;
     }
+	
+	function getAllUsersFromDb(){
+        $sql = "SELECT * FROM user";        
+        $result = executeSQL($sql);
+        
+        $persons = array();
+        for($i=0; $row=mysqli_fetch_assoc($result); ++$i){
+            $persons[$i] = $row;
+        }
+        
+        return $persons;
+    }
+	
+	function searchUserFromDb($string){
+        $sql = "SELECT * FROM user where USER_ID LIKE '%$string%' or NAME Like '%$string%' or EMAIL LIKE '%$string%' or PHONE like '%$string%' or DEPARTMENT LIKE '%$string%' ";        
+        $result = executeSQL($sql);
+        
+        $persons = array();
+        for($i=0; $row=mysqli_fetch_assoc($result); ++$i){
+            $persons[$i] = $row;
+        }
+        
+        return $persons;
+    }
     
     function getPersonByIdFromDb($personId){
         $sql = "SELECT * FROM person WHERE id=$personId";        
+        $result = executeSQL($sql);
+        
+        $person = mysqli_fetch_assoc($result);
+        
+        return $person;
+    }    
+	
+	function getUserByIdFromDb($personId){
+        $sql = "SELECT * FROM user WHERE USER_ID=$personId";        
         $result = executeSQL($sql);
         
         $person = mysqli_fetch_assoc($result);
@@ -108,7 +153,7 @@
         $result = executeSQL($sql);
         
         $persons = array();
-        for($i=0; $row = mysqli_fetch_assoc($result); ++$i){
+        for($i=0; $row = mysqli_fetch_assoc($result); $i++){
             $persons[$i] = $row;
         }
         

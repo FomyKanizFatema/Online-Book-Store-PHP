@@ -25,18 +25,14 @@ include(realpath("../../../links.php"));
 				<tr valign="center">
 					<td width="25%" align="center"><img src="logo.jpg" height="150px" width="120"</td>
 					<td width="50%" align="center">
-						<form>
-							<input type="text" height="31"  size="35" id="searchBox"/>
-							<a href="../../../App/Controller/Shared/search_controller.php"><img src="searchIcon.png" id="searchIcon"/></a>
+						<form action="searchForAll.php">
+							<input type="text" height="31"  size="35" id="searchBox" name="string"/>
+							<button>Search</button>
 							
 						</form>
 					</td>
 					<td>
 					
-					<form action="../../../App/Controller/Shared/wishlist_details.php"><button id="wishD"><img src="wishlist.png"width="30px" height="30px"/><font color="red" id="nwish"><?php  echo 1 ;?></font> </button></form>
-					</td>
-					<td>
-					<form action="../../../App/Controller/Shared/Cart_details.php"><button id="cartD"><img src="cart.png"width="30px" height="30px"/><font color="red" id="nwish"><?php  echo 1 ;?></font> </button></form>
 					
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						

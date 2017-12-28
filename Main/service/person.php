@@ -17,6 +17,10 @@
 	function editUser($person){
         return editUserToDb($person);
     }
+	
+	function editUserByAdmin($name,$email,$phone,$dept,$id){
+        return editUserByAdminToDb($name,$email,$phone,$dept,$id);
+    }
 	function editEmployee($name,$email,$phone){
         return editEmployeeToDb($name,$email,$phone);
     }
@@ -32,13 +36,25 @@
     function removePerson($personId){
         return removePersonFromDb($personId);
     }
+	function removeUser($personId){
+        return removeUserFromDb($personId);
+    }
     
     function getAllPersons(){
         return getAllPersonsFromDb();
     }
+	function searchUser($string){
+        return searchUserFromDb($string);
+    }
+	function getAllUsers(){
+        return getAllUsersFromDb();
+    }
     
     function getPersonById($personId){
         return getPersonByIdFromDb($personId);
+    }
+	function getUserById($personId){
+        return getUserByIdFromDb($personId);
     }
     
     function getPersonsByName($personName){

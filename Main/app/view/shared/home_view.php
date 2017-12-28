@@ -67,14 +67,8 @@
 		<table align="center" width="100%">
 			<tr>
 				<td>
-				<table align="center" border='1'>
-						<tr>
-							<td><a href="../../../App/Controller/General/item_controller.php"><img src="../../../App/View/Images/c.png" height="50%" /></a></td>
-						</tr>
-						<tr>
-							<td align="center">Price : 0.0 <br/><a href="../../../App/Controller/Home/wishlist_controller.php" id="wishlist"><img src="../../../App/View/Images/wishlist.png"width="30px" height="30px"/></a> | <a href="../../../App/Controller/Home/cart_controller.php" id="cart"><img src="../../../App/View/Images/cart.png" width="30px" height="30px"/></a></td>
-						</tr>
-					</table>
+				
+				<?php include(dirname(__DIR__).'/../Controller/shared/Hbooks.php');?>
 				
 				</td>
 				

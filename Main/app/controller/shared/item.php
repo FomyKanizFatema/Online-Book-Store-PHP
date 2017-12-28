@@ -11,7 +11,7 @@
 					<tr>
 					<td>
 						<h4>Item Details :</h4><br/>
-					<img src="../../../App/View/Images/e.jpg" alt="Forest" width="200" height="250">
+					<img src="e.jpg" alt="Forest" width="200" height="250">
 					</td>
 				 <td >
 					<br/><br/><br/><br/>

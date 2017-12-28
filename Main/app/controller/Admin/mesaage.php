@@ -1,4 +1,4 @@
-<script type="text/javascript">
+		<script type="text/javascript">
 		window.location.href = '/project/main/app/controller/Admin/editProfile.php?m=1';
 		</script>
 		
