@@ -24,8 +24,7 @@ $ChangePic='../user/change_pic.php';
 						<tr><td><a href="<?php echo $EditProfile;?>">Edit Profile</a></td></tr>
 						<tr><td><a href="<?php echo $ChangePic;?>">Change Profile Picture</a></td></tr>
 						<tr><td><a href="<?php echo $ChangePass;?>">Change Password</a></td></tr>
-						<tr><td><a href="<?php echo $Feedback;?>">Feedback</a></td></tr>
-						<tr><td><a href="<?php echo $logOut;?>">Log out</a></td>	</tr>											
+												<tr><td><a href="<?php echo $logOut;?>">Log out</a></td>	</tr>											
 			</table>
 		</td>
 	</tr>

@@ -19,7 +19,7 @@ $mesage="";
 					<?php include("sidebar_view.php");?>
 				</td>
 				<td>
-				<font color="red"><?php echo $message?></font>
+				
 					<table cellpadding="25px" width="100%"><tr><td>
 					
 					

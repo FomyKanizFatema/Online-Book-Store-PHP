@@ -1,5 +1,13 @@
 <?php include(dirname(__DIR__).'/data/data_access.php'); ?>
 <?php
+
+ 
+ function placeOrderToDb($bookname,$bookprice,$userid,$userphone){
+		//echo $user['USER_ID'].$book['NAME'];
+       $sql = "INSERT INTO orders(bookname,price,userid) VALUES('$bookname','$bookprice','$userid')";
+        $result = executeSQLs($sql);
+        return $result;
+    }
     function addBookToWishlistDb($bookname,$bookprice,$userid){
 		//echo $user['USER_ID'].$book['NAME'];
        $sql = "INSERT INTO wishlist(name,price,user_Id) VALUES('$bookname','$bookprice','$userid')";
@@ -23,6 +31,12 @@
     
     function removeBookFromDb($bookId){
         $sql = "DELETE FROM book WHERE id=$bookId";        
+        $result = executeSQLs($sql);
+        return $result;
+    }
+	
+	function removeFromWishlistDb($bookname){
+        $sql = "DELETE FROM wishlist WHERE id=$bookname";        
         $result = executeSQLs($sql);
         return $result;
     }

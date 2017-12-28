@@ -12,7 +12,7 @@
 				<tr id="row1" >
 					<td  width="100%" height="40px" align="right">
                          					
-						<a href="../../../Index.php" id="home"><img src="home2.png" width="45px" height="45px"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="log.php" id="home"><img src="home2.png" width="45px" height="45px"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<a href="log.php"id="log"><img src="loginn.png" width="45px" height="45px"/></a> &nbsp;&nbsp; &nbsp;&nbsp;
 						<a href="contact.php" id="contact"><img src="contactus.png"  height="43px" /></a> &nbsp;&nbsp;&nbsp;&nbsp;
 					</td>
@@ -23,41 +23,37 @@
 				
 				<tr>
 					<td width="25%" align="center"><img src="logo.jpg" height="150px" width="120"</td>
-					<td width="50%" align="center">
+					<!--<td width="50%" align="center">
 						<form>
 							<input type="text" height="31" placeholder=" Search By Book/Author/Course" size="35" id="searchBox"/>
 							<a href="../../../App/Controller/Home/search_controller.php"><img src="searchIcon.png" id="searchIcon"/></a>
 							
 						</form>
 					</td>
-					<td>
-						<a href="../../../App/Controller/Home/wishlist_controller.php" id="wishlist"><img src="wishlist.png"width="30px" height="30px"/></a>&nbsp;&nbsp;&nbsp;&nbsp;
-						<a href="../../../App/Controller/Home/cart_controller.php" id="cart"><img src="cart.png" width="30px" height="30px"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<a href="../../../App/Controller/Home/log_controller.php" id="log"><img src="loginn.png" width="75px" height="75px"/></a>
-					</td>
+					
 				</tr>
 				
 			</table>
 			
 			<table width=70% align="center">
 				<tr id="row2" height="30px" width="100%">
+				
 							<td>
-								<form><!--need make hover dropdoen later-->
-									<b><font color="ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbspCS</font></b><br/>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="dept">
-									<option value="">Select Course</option>
-									<option value="c">Course1</option>
-									<option value="EEE">Course2</option>
-									<option value="COE">Course3</option>															
-									</select>
-								</form>
-							</td>				
+								<table width="100%"><tr/>
+									<?php //include(dirname(__DIR__).'/../controller/shared/dept_course_fetcher.php');?>
+								</tr></table>
+							
+								
+							</td>									
 							
 				</tr>
-			</table>
+			</table>-->
+			
 		</header>
 	
-		
+	
+		<br/><br/></br>
+		<h1>You must have to have an Account first</h1>
 		<table border="0" align="center">
 			<tr valign="top">
 			 <td>
@@ -87,11 +83,11 @@
 										
 									</table>
 									<hr>
-									<input type="checkbox" name="remember" value="remember">Remember Me
+									<!--<input type="checkbox" name="remember" value="remember">Remember Me-->
 									<br/>
 									<br/>
 									<input type="submit" value="Submit">
-									<a href="forget.html">Forgot Password?</a>
+									<!--<a href="forget.html">Forgot Password?</a>-->
 									
 							</fieldset>
 					</form>
@@ -150,37 +146,7 @@
 														</td>
 													</tr>
 													
-													<tr >
-														<td colspan="2">
-														<fieldset>
-															<legend>Date of Birth</legend>
-															<table>
-													<tr>
-														<td>dd</td>
-														<td/>
-														<td>mm</td>
-														<td/>
-														<td>yyyy</td>
-													</tr>
-													<tr valign="top">
-														<td>
-															<!--<form action="handler.php">-->
-																<input type="dd" name="date">
-															<!--</form>-->
-														</td>
-														<td>/</td>
-														<td>
-															<!--<form action="handler.php">-->
-																<input type="text" name="month">
-															<!--</form>-->
-														</td>
-														<td>/</td>
-														<td>
-															<!--<form action="handler.php">-->
-																<input type="text" name="year">
-															<!--</form>-->
-														</td>
-													</tr>
+													
 												</table>
 															
 														</fieldset>
@@ -190,7 +156,7 @@
 												<hr>					
 												<br/>
 												<input type="submit" value="Submit">
-												 <input type="submit" value="Reset">
+												
 												
 												
 										</fieldset>
