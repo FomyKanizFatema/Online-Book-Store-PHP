@@ -38,15 +38,8 @@ include(dirname(__DIR__).'/../../../Service/book.php');
 						<th>Name</th>
 						<th>Author</th>						
 						<th>Buying Price</th>	
-<<<<<<< HEAD
-						<th>Selling Price</th>
-						<th>Profit</th>
-						
-						
-=======
 						<th>Selling Price</th>	
 						<th>Profit</th>
->>>>>>> 1b9f36ea9478de1b5727755e715b43e60c04e170
 						<th>Action</th>				
 						 
 						</tr>
@@ -57,15 +50,9 @@ include(dirname(__DIR__).'/../../../Service/book.php');
 						<td><?php echo $book['BOOK_ID'];?></td>
 						<td><?php echo $book['NAME'];?></td>
 						<td><?php echo $book['AUTHOR'];?></td>						
-<<<<<<< HEAD
-						<td><?php echo $book['BUYING PRICE']." "."Taka";?></td>	
-						<td><?php echo $book['SELLING PRICE']." "."Taka";?></td>						
-						
-=======
 						<td><?php echo $book['BUYING PRICE']." "."Taka";?></td>		
 						<td><?php echo $book['SELLING PRICE']." "."Taka";?></td>
 						<td><?php echo $book['SELLING PRICE']-$book['BUYING PRICE']." "."Taka";?></td>
->>>>>>> 1b9f36ea9478de1b5727755e715b43e60c04e170
 						<td><a href="updateB.php?m=<?php echo $book['BOOK_ID'];?>">Update</a>|<a href="removeB.php?m=<?php echo $book['BOOK_ID'];?>">Remove</a></th>	
 						</tr>
 						<?php } ?>
