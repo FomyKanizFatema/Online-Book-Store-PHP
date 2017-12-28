@@ -65,7 +65,7 @@
 									<table >
 										<tr>
 										<td><b>Email </b></td>				
-										<td><b>: </b><input type="text" name="email"></td>
+										<td><b>: </b><input type="email" name="email"></td>
 										</tr>
 										<tr>
 										<td><b>Password <b></td>	
@@ -124,6 +124,7 @@
 													
 													<tr>
 													<td><b>Email </b></td>				
+<<<<<<< HEAD
 													<td><b>: </b><input type="text" name="email"></td>
 													<?php
 															if(isset($_GET['errors1']))
@@ -131,6 +132,9 @@
 															echo '<font  color="red"<b>Invalid Email</b></font>';
 														}
 													?>
+=======
+													<td><b>: </b><input type="email" name="email"></td>
+>>>>>>> 358fd4abb7f9017a2724d7689e4b7196fdeb3205
 													</tr>
 													
 													<tr>
