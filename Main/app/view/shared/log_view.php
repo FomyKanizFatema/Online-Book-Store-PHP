@@ -57,7 +57,7 @@
 		<table border="0" align="center">
 			<tr valign="top">
 			 <td>
-			 
+			<br/>
 					<form action="App/Controller/Shared/login.php" method="POST">
 							<fieldset>
 								<legend>LOGIN</legend>
@@ -103,9 +103,14 @@
 
 									<tr>
 										<td>										
-											<form action="../../../App/Controller/Shared/registration.php" >
+											<form action="App/Controller/Shared/registration.php" >
 										<fieldset>
 											<legend>Don't Have An Account? Register Here</legend>
+											 <h3 align="center"><font color="red" ><?php if(isset($_REQUEST['m'])){
+					if($_REQUEST['m']==1){
+				echo "Registration Successful! !";}
+				}?></font></h3>
+				<br/>
 												<table>
 													<tr>
 													<td><b>Name </b></td>				
