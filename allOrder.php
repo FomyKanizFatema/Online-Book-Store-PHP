@@ -1,4 +1,8 @@
-<?Php include("header.php"); ?>
+<?Php 
+session_start();
+include("view/header.php");
+
+ ?>
 <html>
 	<head>
 		<title>Tienda De Floris</title>
@@ -8,7 +12,7 @@
 		<table border="0" width="100%">
 			<tr valign="top">
 				<td width="20%">
-					<?php include("sidebar.php");?>
+					<?php include("view/sidebar.php");?>
 					
 				</td>
 

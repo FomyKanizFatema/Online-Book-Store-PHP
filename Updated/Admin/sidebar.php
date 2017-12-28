@@ -44,8 +44,8 @@ $updateBook="updateBook.php";
 				
 							<h3 align="center"><b>Orders</b></h3><hr/>
 								<table border="1" cellpadding="10px"width="100%">
-											<!--tr><td><a href="<?php echo $pOrder;?>">Pending Orders</a></td></tr>
-											<tr><td><a href="<?php echo $mOrder;?>">Month's History</a></td></tr-->
+											<tr><td><a href="<?php echo $pOrder;?>">Pending Orders</a></td></tr>
+											<tr><td><a href="<?php echo $mOrder;?>">Month's History</a></td></tr>
 											<tr><td><a href="<?php echo $allOrder;?>">All Orders</a></td></tr>
 																				
 								</table>
