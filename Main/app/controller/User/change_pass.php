@@ -6,35 +6,35 @@ $person= $_SESSION['user'];
 $fetchedUser=getUsersByEmail($person['EMAIL']);
 $_SESSION['user']=$fetchedUser[0];
 $person= $_SESSION['user'];
-echo $person['PASSWORD'];
 
+if(isset($_REQUEST['oldpass'])){
+				if($person['PASSWORD']==$_REQUEST['oldpass']){
+					if($_REQUEST['newpass']==$_REQUEST['rnewpass']){	
+						$person['PASSWORD']=$_REQUEST['newpass'];
+						$r=changeUserPass($person);
+						if($r){ echo "changed";
+						$fetchedUser=getUsersByEmail($person['EMAIL']);
+						$_SESSION['user']=$fetchedUser[0];
+						$message="Changed";
+						}
+					}
+					else{
+						?>
+						<script>
+						document.write("New Password & Confirmed Password didn't match");
+						</script>
+						<?php 
 
-if($person['PASSWORD']==$_REQUEST['oldpass']){
-	if($_REQUEST['newpass']==$_REQUEST['rnewpass']){	
-		$person['PASSWORD']=$_REQUEST['newpass'];
-		$r=changeUserPass($person);
-		if($r){ echo "changed";
-		$fetchedUser=getUsersByEmail($person['EMAIL']);
-		$_SESSION['user']=$fetchedUser[0];
-		$message="Changed";
-		}
-	}
-	else{
-		?>
-		<script>
-		document.write("New Password & Confirmed Password didn't match");
-		</script>
-		<?php 
+					}
+				}
 
-	}
+				else{
+						?>
+						<script>
+						document.write("Wrong Old Password");
+						</script>
+						<?php 
+
+					}
 }
-
-else{
-		?>
-		<script>
-		document.write("Wrong Old Password");
-		</script>
-		<?php 
-
-	}
 ?>

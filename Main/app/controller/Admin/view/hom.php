@@ -12,7 +12,7 @@ include(realpath("view/header.php"));
 		
 		<table border="0" width="100%">
 			<tr valign="top">
-				<td width="20%">
+				<td width="20%" id="side">
 					<?php include("sidebar.php");?>
 					
 				</td>
@@ -37,7 +37,7 @@ include(realpath("view/header.php"));
 	</body>
 	
 	<script type="text/javascript">
-			
+			document.getElementById("side").style.backgroundColor = "4889F3";
 			document.getElementById("wishlist1").style.backgroundColor = "ffffff";
 			document.getElementById("cart1").style.backgroundColor = "ffffff";
 			

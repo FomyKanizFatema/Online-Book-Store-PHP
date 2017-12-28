@@ -38,7 +38,7 @@ include(realpath("../../../links.php"));
 						
 					</td>
 					<td>
-					<form action="../../../App/Controller/User/profile.php"><button><font color="blue">Welcome <br/><?php echo $_SESSION['user']['name'];?> </font></button></form>
+					<form action="profile.php"><button><font color="blue">Welcome <br/><?php echo $_SESSION['user']['name'];?> </font></button></form>
 					</td>
 				</tr>
 				
@@ -49,6 +49,7 @@ include(realpath("../../../links.php"));
 	</body>
 	
 	<script type="text/javascript">
+	document.getElementById("row1").style.backgroundColor = "4889F3";
 	document.getElementById("cartD").style.marginTop = "20px";
 	document.getElementById("wishD").style.backgroundColor = "ffffff";
 			document.getElementById("cartD").style.backgroundColor = "ffffff";
@@ -57,7 +58,7 @@ include(realpath("../../../links.php"));
 			document.getElementById('searchIcon').style.width="45px";
 			document.getElementById('searchBox').style.fontSize="17px";
 			document.getElementById("searchIcon").style.marginBottom = "-16px"
-			document.getElementById("row1").style.backgroundColor = "4889F3";
+			
 			document.getElementById("row2").style.backgroundColor = "4889F3";
 			document.getElementById("searchButton").style.backgroundColor = "ffffff";
 			

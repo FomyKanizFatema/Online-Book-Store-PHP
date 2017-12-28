@@ -35,7 +35,7 @@ echo $role;
 		}
 	}
 	
-	if($role="customer"){
+	else if($role="customer"){
 		$fetchedUser=getUsersByEmail($person['email']);
 		
 		$user=$fetchedUser[0];
@@ -44,20 +44,22 @@ echo $role;
 			session_start();
 			$_SESSION['user']=$user;
 			?>
-			
-			
 			<script type="text/javascript">
 			window.location.href = '/project/main/app/controller/User/home.php';
 			</script>
 			<?php
 	}
 		else{
-				echo "wrong Password";
+				?><script type="text/javascript">
+			window.location.href = '/project/main/index.php?k=1';
+			</script>;<?php
 			}
 	}
 	
 		else{
-				echo "wrong Password";
+				?><script type="text/javascript">
+			window.location.href = '/project/main/index.php?k=1';
+			</script>;<?php
 			}
 
 ?>

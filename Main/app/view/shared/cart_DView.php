@@ -9,9 +9,10 @@
 					<?php if(isset($_REQUEST['m'])){
 					if($_REQUEST['m']==1){
 				echo "Order Placed.Please wait for the confirmation call ! !";}
-				}
+				
 				if($_REQUEST['m']==2){
-				echo "One item is added to cart !";}
+				echo "One item is added to cart !";}}
+				
 			
 				?><br/>
 						<h4>Item Details :</h4><br/>

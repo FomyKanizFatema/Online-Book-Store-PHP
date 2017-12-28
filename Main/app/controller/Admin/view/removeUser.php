@@ -22,7 +22,7 @@ include(realpath("view/header.php"));
 				<td>
 				
 					<form action="search.php?k=1&">
-							<input type="text" height="31"  size="35" id="searchBox" name="string"/>
+							<input type="text" height="31"  size="35" id="searchBox" name="string"placeholder="search user to remove"/>
 							<input type="submit" value="search User"/>
 							
 							

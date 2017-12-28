@@ -58,9 +58,11 @@
 			<tr valign="top">
 			 <td>
 			 
-					<form action="../../../App/Controller/Shared/login.php" method="POST">
+					<form action="App/Controller/Shared/login.php" method="POST">
 							<fieldset>
 								<legend>LOGIN</legend>
+								 
+								<font color="red"><?php if (isset($_REQUEST['k'])){echo "Incoreect Username or Password";}?></font>
 									<table >
 										<tr>
 										<td><b>Email </b></td>				
