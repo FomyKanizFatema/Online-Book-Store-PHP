@@ -37,9 +37,9 @@ echo $role;
 	
 	if($role="customer"){
 		$fetchedUser=getUsersByEmail($person['email']);
-		var_dump($fetchedUser[0]);
+		
 		$user=$fetchedUser[0];
-		$pass=['PASSWORD'];
+		$pass=$user['PASSWORD'];
 		if($pass==$person['pass']){
 			session_start();
 			$_SESSION['user']=$user;

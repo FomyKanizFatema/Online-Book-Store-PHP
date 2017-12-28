@@ -25,11 +25,12 @@
 							</td>
 						</tr>
 				</table>-->
-				<?php session_start(); $_SESSION['book']=$book;?>
+				<?php// session_start(); 
+				$_SESSION['book']=$book;?>
 				
 				<table align="center" border='1'>
 						<tr >
-							<td colspan="2" align="center"><a href="app/controller/shared/item.php"><img src="e.png" height="50%" /></a></td>
+							<td colspan="2" align="center"><a href="app/controller/shared/item.php"><?php echo $book['NAME'];?></a></td>
 						</tr>
 						<tr  > 
 							<td align="center" colspan="2">Price : <?php echo $book['SELLING PRICE'];?> </td> 

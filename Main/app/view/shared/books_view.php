@@ -25,7 +25,8 @@
 							</td>
 						</tr>
 				</table>-->
-				<?php session_start(); $_SESSION['book']=$book;?>
+				<?php //session_start(); 
+				$_SESSION['book']=$book;?>
 				
 				<table align="center" border='1'>
 						<tr >
