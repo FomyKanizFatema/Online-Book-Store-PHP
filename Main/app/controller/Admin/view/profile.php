@@ -19,9 +19,9 @@ $user=$_SESSION['user'];
 								<td width="25%">Name</td>
 								<td width="55%">: <?php echo $user['name'] ;?> </td>
 								<td rowspan="4" >
-									<img src="../Images/user.png" height="200" valign="left"/>
+									<img src="user.png" height="200" valign="left"/>
 									<br/>
-									<a href="changeUserPic.php" >Change</a>
+									<a href="" >Change</a>
 								</td>
 								</tr>
 								<tr>
